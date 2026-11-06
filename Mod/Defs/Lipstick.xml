@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- The layer is ours: a lipstick never conflicts with another garment, only with another lipstick. -->
+  <ApparelLayerDef>
+    <defName>VanityCase_Lips</defName>
+    <label>lips</label>
+    <drawOrder>5</drawOrder>
+  </ApparelLayerDef>
+
+  <!-- Facial Animation mouths with the red painted into the texture (Vanilla Textures Expanded - Facial Animation).
+       Names are plain strings: a mouth of a mod that is not installed is never matched. -->
+  <VanityCase.LipSourceDef>
+    <defName>VanityCase_VteLips</defName>
+    <label>Vanilla Textures Expanded lips</label>
+    <mouthDefNames>
+      <li>MouthLipsBig</li>
+      <li>MouthLipsCocky</li>
+      <li>MouthLipsGrin</li>
+      <li>MouthLipsParted</li>
+      <li>MouthLipsSimple</li>
+      <li>MouthLipsSimpleSmile</li>
+      <li>MouthLipsSmallSmile</li>
+      <li>MouthLipsSmirk</li>
+      <li>MouthLipsTinySmile</li>
+      <li>MouthLipsWorried</li>
+      <li>MouthEdnaLips</li>
+    </mouthDefNames>
+  </VanityCase.LipSourceDef>
+
+  <!-- A lipstick is worn clothing with no worn graphic: Facial Animation draws the lips, we only give them
+       the colour of the lipstick (DrawColor). One def per shade family, so an apparel policy can allow a shade. -->
+  <ThingDef Name="VanityCase_LipstickBase" ParentName="ApparelNoQualityBase" Abstract="True">
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>VanityCase/Lipstick</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <Mass>0.02</Mass>
+      <Beauty>0</Beauty>
+      <WorkToMake>300</WorkToMake>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <costList>
+      <Cloth>1</Cloth>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Brewing</soundWorking>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+    <smeltable>false</smeltable>
+    <apparel>
+      <bodyPartGroups>
+        <li>Mouth</li>
+      </bodyPartGroups>
+      <layers>
+        <li>VanityCase_Lips</li>
+      </layers>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="VanityCase_LipstickBase">
+    <defName>VanityCase_LipstickCaramel</defName>
+    <label>caramel lipstick</label>
+    <description>A stick of caramel lip colour. Worn on the lips, it replaces the painted lip colour of a colonist drawn with Facial Animation.</description>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.769, 0.463, 0.337)</color>
+    </colorGenerator>
+  </ThingDef>
+
+  <ThingDef ParentName="VanityCase_LipstickBase">
+    <defName>VanityCase_LipstickRose</defName>
+    <label>rose lipstick</label>
+    <description>A stick of rose lip colour. Worn on the lips, it replaces the painted lip colour of a colonist drawn with Facial Animation.</description>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.729, 0.322, 0.471)</color>
+    </colorGenerator>
+  </ThingDef>
+
+  <ThingDef ParentName="VanityCase_LipstickBase">
+    <defName>VanityCase_LipstickBerry</defName>
+    <label>berry lipstick</label>
+    <description>A stick of deep berry lip colour. Worn on the lips, it replaces the painted lip colour of a colonist drawn with Facial Animation.</description>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.502, 0.125, 0.251)</color>
+    </colorGenerator>
+  </ThingDef>
+
+  <ThingDef ParentName="VanityCase_LipstickBase">
+    <defName>VanityCase_LipstickForest</defName>
+    <label>forest lipstick</label>
+    <description>A stick of forest green lip colour, made to match a green outfit. Worn on the lips, it replaces the painted lip colour of a colonist drawn with Facial Animation.</description>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.133, 0.431, 0.259)</color>
+    </colorGenerator>
+  </ThingDef>
+
+</Defs>

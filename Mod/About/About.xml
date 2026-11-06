@@ -7,9 +7,9 @@
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
-  <description>Makeup for colonists drawn with Facial Animation. Work in progress: nothing is playable yet.
+  <description>Makeup for colonists drawn with Facial Animation. Work in progress, not yet tested in game.
 
-First feature: lip colours. Painted mouths such as the full lips of Vanilla Textures Expanded - Facial Animation have their red drawn into the texture, so the game cannot dye them. This mod recolours those lips in memory, on your machine, from the textures you already have installed: no texture of another mod is copied or shipped.
+First feature: lipstick. Painted mouths such as the full lips of Vanilla Textures Expanded - Facial Animation have their red drawn into the texture, so the game cannot dye them. A lipstick is a piece of worn clothing with no picture on the colonist: while it is worn, the lips take its colour. This mod recolours the lips in memory, on your machine, from the textures you already have installed: no texture of another mod is copied or shipped. Four shades to start (caramel, rose, berry, forest); an apparel policy lets a colonist wear the shade that suits the occasion.
 
 Interface in English.
 
@@ -32,8 +32,14 @@ This mod is MIT licensed. Credits and licence details: ATTRIBUTION.md.</descript
       <displayName>[NL] Facial Animation - WIP</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/1635901197</steamWorkshopUrl>
     </li>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
   </modDependencies>
   <loadAfter>
+    <li>brrainz.harmony</li>
     <li>Ludeon.RimWorld</li>
     <li>Nals.FacialAnimation</li>
     <li>VanillaExpanded.VTEXE.FacialAnims</li>

@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)..\..\Build\obj\recolour-tests\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)..\..\Build\bin\recolour-tests\</BaseOutputPath>
+  </PropertyGroup>
+</Project>

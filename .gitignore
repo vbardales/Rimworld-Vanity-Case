@@ -31,3 +31,7 @@ Tests/Pickle/evidence/
 Tests/Pickle/Evidence/
 *.webm
 Art/.render/
+
+# Test project intermediates.
+Tests/**/obj/
+Tests/**/bin/

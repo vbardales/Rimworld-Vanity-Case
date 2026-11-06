@@ -59,9 +59,8 @@ would take the colour too, and the mouth colour slot already carries the skin co
 - **Register the result as content of this mod** under a generated path such as
   `VanityCase/Lips/<sourceDef>/<RRGGBB>/<Gender>/<shape>_<rot>`, so Facial Animation's own
   `GraphicDatabase.Get` finds it like any texture.
-- **Hook into Facial Animation's mouth graphic** (Harmony postfix on `MouthControllerComp.LoadTextures`): when the
-  pawn has a lip colour and wears a listed source mouth, replace the `Basic` layer graphic with one built from the
-  recoloured paths; otherwise leave it alone. The pawn keeps its own `MouthTypeDef`, so Facial Animation's save and
+- **Hook into Facial Animation's mouth graphic (as built, 2026-11-06)** (Harmony postfix on `NLGraphic_Collection<MouthShapeDef>.GetSubGraphic`, patched by name through reflection, no compile-time reference to Facial Animation; `LipGraphic` wraps recoloured copies of the four materials): when the
+  pawn wears a lipstick and a listed source mouth, return the recoloured graphic; otherwise leave it alone. The pawn keeps its own `MouthTypeDef`, so Facial Animation's save and
   editor are untouched, and removing the mod restores the original lips. Changing the colour calls `SetDirty()` on
   the comp so the graphic is rebuilt. (A generated `MouthTypeDef` per colour, the first idea, does not fit any
   colour: it would add a def per colour ever picked.)
