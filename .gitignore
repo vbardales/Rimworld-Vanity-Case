@@ -1,0 +1,33 @@
+# Steam does not read .gitignore: SteamUGC.SetItemContent takes the junction's target directory as it
+# stands on disk. Only `Mod/` is published; Art/, Source/, Docs/ and this file stay out of reach.
+
+# Build intermediates: Directory.Build.props sends them outside the published folder.
+Build/
+Source/obj/
+Source/bin/
+
+# Claude Code session worktrees and local settings.
+.claude/
+
+# Development environments.
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.csproj.user
+
+# System.
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# DirectDraw Surface textures: RimWorld loads a .dds in preference to the .png beside it.
+*.dds
+*.DDS
+
+# Evidence of Pickle runs: on disk, never in git.
+Tests/Pickle/evidence/
+Tests/Pickle/Evidence/
+*.webm
+Art/.render/

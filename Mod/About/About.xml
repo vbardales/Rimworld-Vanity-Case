@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Vanity Case</name>
+  <author>Nelim</author>
+  <packageId>nelim.vanitycase</packageId>
+  <modVersion>1.0.0</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Makeup for colonists drawn with Facial Animation. Work in progress: nothing is playable yet.
+
+First feature: lip colours. Painted mouths such as the full lips of Vanilla Textures Expanded - Facial Animation have their red drawn into the texture, so the game cannot dye them. This mod recolours those lips in memory, on your machine, from the textures you already have installed: no texture of another mod is copied or shipped.
+
+Interface in English.
+
+If I go quiet
+
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+
+AI-generated
+
+This mod's code is written with Claude Code (Anthropic) under human direction, review and testing. Stated openly: designing with these tools is my job.
+
+Thanks
+
+Nals for [NL] Facial Animation (https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197), whose mouths this mod recolours, and the Vanilla Expanded team for Vanilla Textures Expanded - [NL] Facial Animation (https://steamcommunity.com/sharedfiles/filedetails/?id=2816938779), whose lips gave the idea. None of their files are copied here.
+
+This mod is MIT licensed. Credits and licence details: ATTRIBUTION.md.</description>
+  <modDependencies>
+    <li>
+      <packageId>Nals.FacialAnimation</packageId>
+      <displayName>[NL] Facial Animation - WIP</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/1635901197</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Nals.FacialAnimation</li>
+    <li>VanillaExpanded.VTEXE.FacialAnims</li>
+  </loadAfter>
+</ModMetaData>
