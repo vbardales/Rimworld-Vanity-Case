@@ -26,7 +26,9 @@ Thanks
 
 Nals for [NL] Facial Animation (https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197), whose mouths this mod recolours, and the Vanilla Expanded team for Vanilla Textures Expanded - [NL] Facial Animation (https://steamcommunity.com/sharedfiles/filedetails/?id=2816938779), whose lips gave the idea. None of their files are copied here.
 
-This mod is MIT licensed. Credits and licence details: ATTRIBUTION.md.</description>
+This mod is MIT licensed. Credits and licence details: ATTRIBUTION.md.
+
+[url=https://github.com/vbardales/Rimworld-Vanity-Case]Source code on GitHub[/url]</description>
   <modDependencies>
     <li>
       <packageId>Nals.FacialAnimation</packageId>
