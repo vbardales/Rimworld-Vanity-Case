@@ -5,7 +5,7 @@ repo: Rimworld-Vanity-Case
 remote: https://github.com/vbardales/Rimworld-Vanity-Case.git
 visibility: public             # original creation, nothing taken from another mod (PUBLISHING.md, "Nommage"); the GitHub repository is not created yet
 detached: yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence: original
 licence_at: "2026-11-06: original work, MIT (LICENSE and Mod/LICENSE). No third-party file: Facial Animation (Nals) is a dependency, Vanilla Textures Expanded - Facial Animation lips are recoloured in memory at run time, never copied (Docs/DESIGN-LIP-COLOURS.md)."
 upstream_mod_remotes: N/A      # no source mod: Facial Animation and VTE - Facial Animation are a dependency and an optional input, none of their files is used
@@ -19,6 +19,7 @@ workshop: none
 published: no
 tested_on: never
 remaining:
+  - "2026-11-17: writeTests done, now playTests[1.0.0] (7.i). Waiting: Audit (declare Tests/Recolour, LOCAL_SCRIPTS row) and CI/CD via TM (Test-Mod.ps1 skeleton, junction). To do at playTests: 8.0 ecosystem refresh, file the 01-lipstick tickets (one scenario each, runner auto), read Inbox, French texts by eye, settings no-page check, Preview.png absent."
   - "2026-11-17: writeTests 7.a TESTING.md written (9 behaviours), 7.d Pickle suite written not run (Tests/Pickle: 01-lipstick, 6 scenarios, wsl-deps.lipstick.map, companion Mod, Inbox/, mod.json), Check-FeatureDefs OK. 7.b run now at revision 8d33334+: Tests/Recolour 7 pure checks OK, Check-DefRefs OK, Check-PatchTargets 0 of 0, Check-Translations PASS, Check-SettingsContract PASS. Open before 7.i: declare Tests/Recolour (a C# harness, not matched by Run-UnitTests, no Tests/*.Tests.csproj) to Audit for scripts/LOCAL_SCRIPTS.md; Test-Mod.ps1 and .github skeleton only from CI/CD once the junction is mounted (ask CI/CD); About.xml description still says work in progress and Interface in English (writeReleaseDocs). Scenarios 7 and 8 of TESTING.md are unverified by design."
   - "2026-11-17: eye fix 41c9a46 seen in game by SaB (ticket 61e3 green, Miel): both eyes equal orange with Caramel worn, Caramel Rose Forest lips clear. Evidence in SanctuaryBacklot/Tests/Pickle/Evidence/miel-lipstick/faces-after-vac-eye-fix.jpg, not a VanityCase ticket."
   - "2026-11-17: localize done (6.g validated by Virginie, round 3 green). Now writeTests[1.0.0]: 7.a scenarios in TESTING.md (lipstick on Miel dark skin, eyes unchanged, no lipstick keeps red, apparel policy), 7.b tests (Tests/Recolour is the harness, name it with its count, no csproj named *.Tests.csproj), 7.d Pickle suite and Tests/Pickle/Inbox, About.xml description to update (work in progress, Interface in English). SaB ticket 61e3 (eyes fix 41c9a46) pending."
@@ -40,7 +41,7 @@ remaining:
   - "2026-11-06: unverified: lip colours (implemented, 3.a closed), approach in Docs/DESIGN-LIP-COLOURS.md (recolour installed VTE lip textures in memory on demand, Harmony postfix on Facial Animation's MouthControllerComp.LoadTextures, nothing shipped). Virginie: any colour per pawn (example forest green #226E42 to match Miel's underwear, test copy NsbMouthLipsBigForest in NsbFaceFit), ideally per outfit or occasion. Caramel, Rose, Berry are presets only. Virginie 2026-11-06 (final): the lip colour follows the lipstick worn: lipstick = colourable apparel with no worn graphic on its own layer; outfits and occasions go through the apparel policy, matching an outfit is a dye. One lipstick def per shade family (Virginie 2026-11-06), so each occasion's apparel policy picks the shade; first shades Caramel, Rose, Berry, Forest #226E42, list to settle. Open: dye needs Ideology, mouth body part group, recipe and cost."
   - "2026-11-06: 1.a done: duplicate search (Search-Workshop.sh, pattern lipstick or makeup, run makeup-dup): no mod recolours Facial Animation lips. Makeup Mod (BigOlBullseye.MakeupMod, 3810397741) is a craftable beauty item with no visual; Roo's Tattoos and Roo's Birthmarks and Blemishes are skin marks, not lips."
 updated: 2026-11-17
-protocols_read_sha: 60a2e95e8b1f50ee888a9b04bc0939da4a4c636d
+protocols_read_sha: 3e1f8dff18f7e4658931e5ad0ff66f0bc8eed6bb
 ---
 
 # Vanity Case: status
