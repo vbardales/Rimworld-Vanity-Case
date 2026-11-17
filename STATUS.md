@@ -10,15 +10,16 @@ licence: original
 licence_at: "2026-11-06: original work, MIT (LICENSE and Mod/LICENSE). No third-party file: Facial Animation (Nals) is a dependency, Vanilla Textures Expanded - Facial Animation lips are recoloured in memory at run time, never copied (Docs/DESIGN-LIP-COLOURS.md)."
 upstream_mod_remotes: N/A      # no source mod: Facial Animation and VTE - Facial Animation are a dependency and an optional input, none of their files is used
 settings_audit: not_applicable
-localization: unchecked
-translation_en: unchecked
-translation_fr: unchecked
+localization: partial
+translation_en: partial
+translation_fr: partial
 dependencies: complete         # 2026-11-08, record in remaining (4.g)
 workshop_required_items: n/a, not released yet   # owner 2026-11-10 (AUDIT 4.g): prepublication 0.1.0 item only, Required items set by hand at writeReleaseDocs or publish
 workshop: none
 published: no
 tested_on: never
 remaining:
+  - "2026-11-17: localize: French DefInjected written (10 keys, Mod/Languages/French), Check-Translations PASS. ChatGPT round 1: English description rewording rejected (taste, current wording natural), PUBLICATION.md absent (writeReleaseDocs), proper nouns Facial Animation and Vanilla Textures Expanded await Virginie and Audit TITLE? answer. Next: /review-translation 1 again (round 2), Translation audit section, Virginie French review, then 6.i."
   - "2026-11-17: REPLAY whole chain (ledger .replays/VanityCase-20261117c.tsv): code[1.0.0] to localize[1.0.0]. 4.g fixed in place (workshop_required_items added). First open 6.a: no text inventory, no Translation audit section, 10 French keys missing (Check-Translations), TRANSLATION_REVIEW.md to make, /review-translation then Virginie review. Also at later stages: Preview.png missing (mountPreview), About.xml description says work in progress and Interface in English (fix at localize and writeReleaseDocs), no unit-test project reason for 7.b (Tests/Recolour is the harness)."
   - "2026-11-17: 4.g REDONE at revision ac000ba (replay). Re-read About.xml and Source/*.cs: hard modDependencies Nals.FacialAnimation (Source/ reflection) and brrainz.harmony (HarmonyLib in VanityCaseMod.cs); VTE VanillaExpanded.VTEXE.FacialAnims only loadAfter, no code reference; DLC none; no LoadFolders, no patch, no MayRequire; Check-OptionalCompat 0/0/0; supportedVersions 1.6. workshop_required_items n/a, not released yet."
   - "2026-11-17: skin-colour fix c8c3c18 seen in game by SaB (their ticket 4ca4 green, Miel dark skin, MouthLipsBig): Berry, Caramel, Rose, Forest distinct, teeth and outline normal. Evidence in SanctuaryBacklot/Tests/Pickle/Evidence/miel-lipstick/faces-after-vac-fix-berry-caramel-rose-forest.jpg, not a VanityCase ticket: our own playTests still to file."
