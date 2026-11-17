@@ -80,6 +80,7 @@ In-game check (no empty Mod options page, no shortcut) stays `unverified` until 
 - Retextures to check at playTests: Reel's 3118315633, Facial Animation - Retexture 3271240549, Nice Facial Animation 3302079637, Visual beauty 3685072616, More and Retextured Head Shapes for VTE 3407049972.
 - Translations of the parent: none found. Nothing to integrate at localize beyond English and French.
 - Verdict: own niche, the mod goes on. No patch or retexture of an original fires on us (no original). Play-test check: lips still show with the retexture packs and with VTE heads.
+- Refresh 2026-11-17 (playTests 8.0, PiI report 4e59b10): no new lipstick or lip-colour duplicate ("lipstick" only returns Over The Rainbow and Pig Wife by text), no new mouth or lip patch, retexture or translation. Two new Facial Animation items added as linked, not lips: RC - Facial animation 3840159863, Mass Effect Xenotypes - Facial Animation 3639216820. Makeup Mod 3810397741 unchanged. Verdict unchanged.
 
 ## Translation audit
 
@@ -88,4 +89,3 @@ Inventory: Defs and Source read; no setting, no letter, no message, no text buil
 Mod names in French texts: `[NL] Facial Animation - WIP (Visage Animé, en travaux)` (registry form, Audit 2026-11-17); Vanilla Textures Expanded stays English alone in the label (rule of labels), full form `Vanilla Textures Expanded (Extension Vanilla Textures) - [NL] Facial Animation` recorded in `Docs/review-names.md`.
 ChatGPT `/review-translation`, page 1: round 1 (1 applied: French delivered; 4 English rewordings rejected as taste), round 2 (1 applied: berry wording), round 3 (0 applied, page green). PUBLICATION.md absent: writeReleaseDocs.
 Virginie's French review (6.g): validated by Virginie on 2026-11-17, revision 41c9a46, no correction. `translation_fr` and `localization` complete. In-game checks (raw keys, fallback text, clipping) `unverified` until playTests.
-- Refresh 2026-11-17 (playTests 8.0, PiI report 4e59b10): no new lipstick or lip-colour duplicate ("lipstick" only returns Over The Rainbow and Pig Wife by text), no new mouth or lip patch, retexture or translation. Two new Facial Animation items added as linked, not lips: RC - Facial animation 3840159863, Mass Effect Xenotypes - Facial Animation 3639216820. Makeup Mod 3810397741 unchanged. Verdict unchanged.
