@@ -12,8 +12,8 @@ Written 2026-11-17 (`writeTests[1.0.0]`). Offline checks run on any machine; the
 | 4 | Only the mouth is recoloured, never the eyes | none (needs the game: the Harmony patch body is shared by all graphic collections) | `lipstick-eyes-unchanged`: Caramel worn, both eyes read equal. WEAK: on this fixture the eyes render plain black (the eye colour step shows nothing without an eyeball type), so it could not have caught the orange left eye; the real proof is SaB on Miel (ticket 61e3, 2026-11-17) |
 | 5 | No lipstick worn: the original red lips are drawn | none | `lipstick-none-keeps-red`: same face, nothing worn |
 | 6 | Four shade defs exist, one per shade, craftable | `Check-DefRefs` of the shared checks, defs in `Mod/Defs/Lipstick.xml` | the four wear steps resolve `VanityCase_Lipstick<Shade>`; `Check-FeatureDefs.js` found them |
-| 7 | Facial Animation absent or changed: the mod logs one warning and does nothing | none | not scripted: needs a pass without Facial Animation, which this mod cannot load without (hard dependency); `unverified` |
-| 8 | Taking the lipstick off, dyeing it, an apparel policy picking a shade | none | not scripted in this suite: `unverified`, to try by hand or in a later suite |
+Facial Animation absent or changed: the mod logs one warning and does nothing | none | not scripted: needs a pass without Facial Animation, which this mod cannot load without (hard dependency); not applicable: a hard dependency, the mod cannot load without Facial Animation; the one-warning fallback is read in code review 8.m |
+| 8 | Taking the lipstick off restores the red lips, dyeing the lipstick changes the shade; an apparel policy picking a shade is game logic, not ours | none | `lipstick-removed-back-to-red`, `lipstick-dyed-berry` (03-remove-dye, `@review` captures). The apparel policy part is not applicable: the game, not this mod, decides what a colonist wears, and the wear step already proves the mod reacts to a worn lipstick. |
 | 9 | French labels and descriptions | `Check-Translations.ps1` PASS (10 keys), DefInjected paths resolve | not scripted: `playTests` checks the French texts by eye in the item card |
 
 ## Offline commands
