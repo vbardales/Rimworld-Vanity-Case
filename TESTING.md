@@ -19,7 +19,7 @@ Written 2026-11-17 (`writeTests[1.0.0]`). Offline checks run on any machine; the
 ## Offline commands
 
 ```text
-dotnet run --project Tests/Recolour            # 7 pure checks, prints OK
+powershell -NoProfile -ExecutionPolicy Bypass -File ../scripts/Run-UnitTests.ps1 -ModRoot .   # harness Tests/Recolour.Tests.csproj (console exe), 7 checks, prints "OK: 7 check(s) passed"
 dotnet build Source/VanityCase.csproj -c Release   # DLL into Mod/Assemblies
 powershell -NoProfile -ExecutionPolicy Bypass -File ../scripts/Check-Translations.ps1 -ModRoot .
 powershell -NoProfile -ExecutionPolicy Bypass -File ../scripts/Check-SettingsContract.ps1 -ModRoot .
@@ -28,3 +28,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File ../scripts/Check-SettingsCon
 ## In-game
 
 One scenario per ticket, pass `lipstick`, map `Tests/Pickle/wsl-deps.lipstick.map`; see `Tests/Pickle/README.md`. The `@review` captures are read by eye: a green step proves only that a file was captured.
+
+## Unit-test harness (AUDIT 7.b)
+
+`Tests/Recolour.Tests.csproj` (console exe, sources in `Tests/Recolour/Program.cs`, compiles `Source/LipRecolour.cs`), run by the shared `Run-UnitTests.ps1`: 7 checks, all green on 2026-11-17. The two-directory mode (`dotnet run --project Tests/Recolour.Tests.csproj -- <lip texture dir> <output dir>`) recolours real VTE lip PNGs for a visual check: a manual extra, not part of the 7.

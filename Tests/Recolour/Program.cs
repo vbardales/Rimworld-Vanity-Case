@@ -11,9 +11,11 @@ using VanityCase;
 internal static class Program
 {
     private static int fails;
+    private static int total;
 
     private static void Check(bool ok, string what)
     {
+        total++;
         if (ok) return;
         fails++;
         Console.WriteLine("FAIL " + what);
@@ -83,7 +85,7 @@ internal static class Program
                 }
             }
         }
-        Console.WriteLine(fails == 0 ? "OK" : fails + " failure(s)");
+        Console.WriteLine(fails == 0 ? "OK: " + total + " check(s) passed" : fails + " failure(s) of " + total + " check(s)");
         return fails == 0 ? 0 : 1;
     }
 }

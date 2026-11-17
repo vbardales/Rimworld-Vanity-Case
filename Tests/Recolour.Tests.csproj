@@ -5,7 +5,7 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\Source\LipRecolour.cs" Link="LipRecolour.cs" />
+    <Compile Include="..\Source\LipRecolour.cs" Link="LipRecolour.cs" />
     <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
   </ItemGroup>
 </Project>
