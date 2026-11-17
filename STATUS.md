@@ -93,7 +93,7 @@ Virginie's French review (6.g): validated by Virginie on 2026-11-17, revision 41
 
 ## NSB
 
-Synced 2026-11-17 (sync-nsb-npt, NSB docs read by a read-only sub-agent, NPT steps read). Rules said back: everything in NSB is free; a colonist or domestic animal outside NSB, and any change to a colonist property (mouth included), need Virginie's express validation; every outfit is free; every animal the mod includes must be shown (the mod includes none). Nothing in NSB moved since the lipstick tests: Miel's lipstick Caramel was set by the owner on 2026-11-17 (VALIDE.md). No shotlist written yet (writeShotlist not started, waiting on Virginie's makeup-layer decision). NPT: no new step or catalogue entry changes the plan (mouth, portrait and dyed-wear steps already used).
+Synced 2026-11-17 (sync-nsb-npt, NSB docs read by a read-only sub-agent, NPT steps read). Rules said back: everything in NSB is free; a colonist or domestic animal outside NSB, and any change to a colonist property (mouth included), need Virginie's express validation; every outfit is free; every animal the mod includes must be shown (the mod includes none). Nothing in NSB moved since the lipstick tests: Miel's lipstick Caramel was set by the owner on 2026-11-17 (VALIDE.md). Shotlist written 2026-11-17 (see "Shotlist"): Nelim and Miel only, no colonist outside NSB, no property changed (Nelim keeps her canon MouthLipsSmirk). NPT: no new step or catalogue entry changes the plan (mouth, portrait and dyed-wear steps already used).
 
 Places read: 2026-11-17 Tribe read: 2026-11-17 Steps read: 2026-11-17
 
@@ -108,3 +108,19 @@ Places read: 2026-11-17 Tribe read: 2026-11-17 Steps read: 2026-11-17
 | Nelim (`MouthLipsSmirk`, supported by the mod, roster value is a proposition) | candidate | emerald `LTS_Tunika` for Forest, blood-red `LTS_SummerSundress` for Berry | 2026-11-17 | PENDING if her mouth must change; not needed if her roster mouth stays |
 
 Animals: none (the mod adds no animal and no item addresses one). Included animals: none, nothing MISSING.
+
+## Shotlist
+
+Written 2026-11-17 in the header of `Tests/Pickle/Mod/Pickle/Features/vanitycase-gallery.feature` (pass map `Tests/Pickle/wsl-deps.gallery.map`). Story "Four shades, one day": Nelim helps Miel pick a lipstick for tea at the hut; hours 8, 9, 10, 14, 18, 19, clear. Opus director pass kept: tighter zoom, tube counter 4-3-2-1, no mirror, Berry on Nelim, no red-on-red, hut at 18h and 19h, no walking pose. Not kept: Rose on Miel (Caramel is her validated lipstick). `Check-ShotlistVsScenario`: OK (2026-11-17). No capture yet: plan rated.
+
+| # | scene | a place, hour | b decor | c living | d pawns | e instant | f frame | g says | j at 268 px | plan |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | vanity-1-dressing-corner | terrace, 8h, Clear | 4 tubes, Stool, TorchLamp lit, PlantPot, SculptureSmall | Plant_Daylily, YellowTallGrass | Nelim emerald LTS_Tunika, Highpony, smirk; Miel overalls, bare lips | she holds out the first tube (e weak: standing pose) | zoom 3.2, tubes foreground | Four shades, one morning | weak (small lips, assumed) | 4.0 |
+| 2 | vanity-2-caramel | terrace, 9h | 3 tubes, Stool, torch, pot | daylily | Miel Caramel, smile | just put the colour on (e weak) | zoom 2.6 head and shoulders | Miel tries Caramel | ok | 4.5 |
+| 3 | vanity-3-berry | terrace, 10h | 2 tubes, Stool, pot, grass | daylily, grass | Nelim Berry, Miel shoulder | glances at Miel (e weak) | zoom 2.4 off-centre | Berry suits Nelim | ok | 4.5 |
+| 4 | vanity-4-cloister | cloister, 14h | torii, wall lanterns, TorchLamp lit, pot | daylily, grass | both, Berry and Caramel | set out for tea (e weak) | zoom 3 | Two shades on the way to tea | weak (two faces, assumed) | 4.0 |
+| 5 | vanity-5-forest | hut, 18h | andon, DR_StickLantern lit, Stool, pot | daylily, grass | Miel Forest, cream wrap, green trousers | just changed for tea (e weak) | zoom 2.4 | Miel chooses Forest | ok | 4.5 |
+| 6 | vanity-6-tea | hut, 19h | andon, 2 DR_StickLantern lit, Rose tube, pot | daylily | both, Forest and Berry | tea poured (e weak) | zoom 5 wide closing | Four shades, three chosen | weak (wide, assumed) | 4.0 |
+| 7 | vanity-7-item-card | window-backdrop-for-height, 12h | item | | | | zoom 6 | interface window, not scored | | - |
+
+k series: ok (one story, wide 6 / medium 1, 4 / tight 2, 3, 5, opening 1, closing 6). e weak on every scene is assumed: no step gives a pawn a job or a walking pose, the instant is written but the pose is standing. Plan mean 4.25. Risks: lips unreadable at 268 px on 1, 4, 6 (test with ffmpeg at the first capture); cells read from empty-place photos at the first ticket; `Miel` and `Nelim` smile kit overrides the mouth if the order changes; green lips vs the hut wall.
