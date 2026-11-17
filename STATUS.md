@@ -11,7 +11,7 @@ licence_at: "2026-11-06: original work, MIT (LICENSE and Mod/LICENSE). No third-
 upstream_mod_remotes: N/A      # no source mod: Facial Animation and VTE - Facial Animation are a dependency and an optional input, none of their files is used
 settings_audit: not_applicable
 localization: partial
-translation_en: partial
+translation_en: complete
 translation_fr: partial
 dependencies: complete         # 2026-11-08, record in remaining (4.g)
 workshop_required_items: n/a, not released yet   # owner 2026-11-10 (AUDIT 4.g): prepublication 0.1.0 item only, Required items set by hand at writeReleaseDocs or publish
@@ -19,6 +19,7 @@ workshop: none
 published: no
 tested_on: never
 remaining:
+  - "2026-11-17: localize: ChatGPT review green (round 3, 0 applied), Translation audit written (6.h). Open 6.g: Virginie French review of the 10 keys (TRANSLATION_REVIEW.md), then translation_fr and localization complete and 6.i to writeTests."
   - "2026-11-17: localize: French DefInjected written (10 keys, Mod/Languages/French), Check-Translations PASS. ChatGPT round 1: English description rewording rejected (taste, current wording natural), PUBLICATION.md absent (writeReleaseDocs), proper nouns Facial Animation and Vanilla Textures Expanded await Virginie and Audit TITLE? answer. Next: /review-translation 1 again (round 2), Translation audit section, Virginie French review, then 6.i."
   - "2026-11-17: REPLAY whole chain (ledger .replays/VanityCase-20261117c.tsv): code[1.0.0] to localize[1.0.0]. 4.g fixed in place (workshop_required_items added). First open 6.a: no text inventory, no Translation audit section, 10 French keys missing (Check-Translations), TRANSLATION_REVIEW.md to make, /review-translation then Virginie review. Also at later stages: Preview.png missing (mountPreview), About.xml description says work in progress and Interface in English (fix at localize and writeReleaseDocs), no unit-test project reason for 7.b (Tests/Recolour is the harness)."
   - "2026-11-17: 4.g REDONE at revision ac000ba (replay). Re-read About.xml and Source/*.cs: hard modDependencies Nals.FacialAnimation (Source/ reflection) and brrainz.harmony (HarmonyLib in VanityCaseMod.cs); VTE VanillaExpanded.VTEXE.FacialAnims only loadAfter, no code reference; DLC none; no LoadFolders, no patch, no MayRequire; Check-OptionalCompat 0/0/0; supportedVersions 1.6. workshop_required_items n/a, not released yet."
@@ -73,3 +74,11 @@ In-game check (no empty Mod options page, no shortcut) stays `unverified` until 
 - Retextures to check at playTests: Reel's 3118315633, Facial Animation - Retexture 3271240549, Nice Facial Animation 3302079637, Visual beauty 3685072616, More and Retextured Head Shapes for VTE 3407049972.
 - Translations of the parent: none found. Nothing to integrate at localize beyond English and French.
 - Verdict: own niche, the mod goes on. No patch or retexture of an original fires on us (no original). Play-test check: lips still show with the retexture packs and with VTE heads.
+
+## Translation audit
+
+2026-11-17, revision 8d33334. English lives in `Mod/Defs/Lipstick.xml` (source text). French lives in `Mod/Languages/French/DefInjected/` (ThingDef 4 labels and 4 descriptions, ApparelLayerDef 1 label, VanityCase.LipSourceDef 1 label): 10 keys, no Keyed (no text in code, 0 Keyed calls).
+Inventory: Defs and Source read; no setting, no letter, no message, no text built in code. `Check-Translations.ps1`: PASS, 10 source texts and French injections.
+Mod names in French texts: `[NL] Facial Animation - WIP (Visage Animé, en travaux)` (registry form, Audit 2026-11-17); Vanilla Textures Expanded stays English alone in the label (rule of labels), full form `Vanilla Textures Expanded (Extension Vanilla Textures) - [NL] Facial Animation` recorded in `Docs/review-names.md`.
+ChatGPT `/review-translation`, page 1: round 1 (1 applied: French delivered; 4 English rewordings rejected as taste), round 2 (1 applied: berry wording), round 3 (0 applied, page green). PUBLICATION.md absent: writeReleaseDocs.
+Virginie's French review: not done (awaited, 6.g). `translation_fr` stays `partial` until she validates. In-game checks (raw keys, fallback text, clipping) `unverified` until playTests.
