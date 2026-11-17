@@ -22,6 +22,7 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" mouth is "MouthLipsBig"
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
+    And Nelim's Pickle Tools: the game is advanced by 60 ticks
     And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
@@ -40,6 +41,7 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" wears "VanityCase_LipstickCaramel"
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
+    And Nelim's Pickle Tools: the game is advanced by 60 ticks
     And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
@@ -58,6 +60,7 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" wears "VanityCase_LipstickRose"
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
+    And Nelim's Pickle Tools: the game is advanced by 60 ticks
     And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
@@ -76,6 +79,7 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" wears "VanityCase_LipstickBerry"
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
+    And Nelim's Pickle Tools: the game is advanced by 60 ticks
     And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
@@ -94,6 +98,7 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" wears "VanityCase_LipstickForest"
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
+    And Nelim's Pickle Tools: the game is advanced by 60 ticks
     And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
@@ -113,6 +118,7 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" eye colour is rgb (255, 140, 0)
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
+    And Nelim's Pickle Tools: the game is advanced by 60 ticks
     And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
