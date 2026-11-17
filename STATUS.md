@@ -87,3 +87,21 @@ Inventory: Defs and Source read; no setting, no letter, no message, no text buil
 Mod names in French texts: `[NL] Facial Animation - WIP (Visage Animé, en travaux)` (registry form, Audit 2026-11-17); Vanilla Textures Expanded stays English alone in the label (rule of labels), full form `Vanilla Textures Expanded (Extension Vanilla Textures) - [NL] Facial Animation` recorded in `Docs/review-names.md`.
 ChatGPT `/review-translation`, page 1: round 1 (1 applied: French delivered; 4 English rewordings rejected as taste), round 2 (1 applied: berry wording), round 3 (0 applied, page green). PUBLICATION.md absent: writeReleaseDocs.
 Virginie's French review (6.g): validated by Virginie on 2026-11-17, revision 41c9a46, no correction. `translation_fr` and `localization` complete. In-game checks (raw keys, fallback text, clipping) `unverified` until playTests.
+
+## NSB
+
+Synced 2026-11-17 (sync-nsb-npt, NSB docs read by a read-only sub-agent, NPT steps read). Rules said back: everything in NSB is free; a colonist or domestic animal outside NSB, and any change to a colonist property (mouth included), need Virginie's express validation; every outfit is free; every animal the mod includes must be shown (the mod includes none). Nothing in NSB moved since the lipstick tests: Miel's lipstick Caramel was set by the owner on 2026-11-17 (VALIDE.md). No shotlist written yet (writeShotlist not started, waiting on Virginie's makeup-layer decision). NPT: no new step or catalogue entry changes the plan (mouth, portrait and dyed-wear steps already used).
+
+Places read: 2026-11-17 Tribe read: 2026-11-17 Steps read: 2026-11-17
+
+| Place | Shots | Changes for the gallery | Last read |
+| --- | --- | --- | --- |
+| Veranda `terrace` (196, 121 portrait cell, zoom 6.8) | candidate, face close-ups | none; hour 12, weather Clear set by the scenario | 2026-11-17 |
+| Cloister `cloister` (178, 128), Tea room `hut` (141, 72) | candidates, group or mood shot | none | 2026-11-17 |
+
+| Colonist | Shots | Outfit per shot | Last read | Exceptions |
+| --- | --- | --- | --- | --- |
+| Miel (dark skin, `MouthLipsBig` fixed by roster) | candidate lead: four shades Caramel, Rose, Berry, Forest | orange `VAE_Apparel_Overalls` + cream bandeau for Caramel; green daily (plaid shirt + green trousers, or sage jacket) for Forest; any validated daily for Rose and Berry | 2026-11-17 | none: mouth already hers, Caramel validated by Virginie 2026-11-17 |
+| Nelim (`MouthLipsSmirk`, supported by the mod, roster value is a proposition) | candidate | emerald `LTS_Tunika` for Forest, blood-red `LTS_SummerSundress` for Berry | 2026-11-17 | PENDING if her mouth must change; not needed if her roster mouth stays |
+
+Animals: none (the mod adds no animal and no item addresses one). Included animals: none, nothing MISSING.
