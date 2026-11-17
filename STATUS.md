@@ -5,7 +5,7 @@ repo: Rimworld-Vanity-Case
 remote: https://github.com/vbardales/Rimworld-Vanity-Case.git
 visibility: public             # original creation, nothing taken from another mod (PUBLISHING.md, "Nommage"); the GitHub repository is not created yet
 detached: yes
-workflow_stage: code[1.0.0]
+workflow_stage: localize[1.0.0]
 licence: original
 licence_at: "2026-11-06: original work, MIT (LICENSE and Mod/LICENSE). No third-party file: Facial Animation (Nals) is a dependency, Vanilla Textures Expanded - Facial Animation lips are recoloured in memory at run time, never copied (Docs/DESIGN-LIP-COLOURS.md)."
 upstream_mod_remotes: N/A      # no source mod: Facial Animation and VTE - Facial Animation are a dependency and an optional input, none of their files is used
@@ -14,10 +14,13 @@ localization: unchecked
 translation_en: unchecked
 translation_fr: unchecked
 dependencies: complete         # 2026-11-08, record in remaining (4.g)
+workshop_required_items: n/a, not released yet   # owner 2026-11-10 (AUDIT 4.g): prepublication 0.1.0 item only, Required items set by hand at writeReleaseDocs or publish
 workshop: none
 published: no
 tested_on: never
 remaining:
+  - "2026-11-17: REPLAY whole chain (ledger .replays/VanityCase-20261117c.tsv): code[1.0.0] to localize[1.0.0]. 4.g fixed in place (workshop_required_items added). First open 6.a: no text inventory, no Translation audit section, 10 French keys missing (Check-Translations), TRANSLATION_REVIEW.md to make, /review-translation then Virginie review. Also at later stages: Preview.png missing (mountPreview), About.xml description says work in progress and Interface in English (fix at localize and writeReleaseDocs), no unit-test project reason for 7.b (Tests/Recolour is the harness)."
+  - "2026-11-17: 4.g REDONE at revision ac000ba (replay). Re-read About.xml and Source/*.cs: hard modDependencies Nals.FacialAnimation (Source/ reflection) and brrainz.harmony (HarmonyLib in VanityCaseMod.cs); VTE VanillaExpanded.VTEXE.FacialAnims only loadAfter, no code reference; DLC none; no LoadFolders, no patch, no MayRequire; Check-OptionalCompat 0/0/0; supportedVersions 1.6. workshop_required_items n/a, not released yet."
   - "2026-11-17: skin-colour fix c8c3c18 seen in game by SaB (their ticket 4ca4 green, Miel dark skin, MouthLipsBig): Berry, Caramel, Rose, Forest distinct, teeth and outline normal. Evidence in SanctuaryBacklot/Tests/Pickle/Evidence/miel-lipstick/faces-after-vac-fix-berry-caramel-rose-forest.jpg, not a VanityCase ticket: our own playTests still to file."
   - "2026-11-17: ecosystem done (2.h, report e600c89, Ecosystem section). Now code[1.0.0] (2.i). Chain 3 to 6 not replayed since: run replay-audit 3..6 next; 3.a to 5 expected done, localize French keys (10) open."
   - "2026-11-17: REPLAY 1.a to 2.i (ledger .replays/VanityCase-20261117.tsv): stage moved back localize[1.0.0] to ecosystem. 2.h open: no docs/inventory/ecosystem-steam/VanityCase.md, no Ecosystem section here (stage added 2026-11-16, mod skipped it). Next: send ECOSYSTEM? to PiI (VanityCase, FA Nals.FacialAnimation, VTE VanillaExpanded.VTEXE.FacialAnims 2816938779), copy summary into an Ecosystem section, then 2.i to code[1.0.0] and replay 3 to 6 (settings not_applicable and Settings audit already written 2026-11-17, localize French keys still missing)."
@@ -32,7 +35,7 @@ remaining:
   - "2026-11-06: unverified: lip colours (implemented, 3.a closed), approach in Docs/DESIGN-LIP-COLOURS.md (recolour installed VTE lip textures in memory on demand, Harmony postfix on Facial Animation's MouthControllerComp.LoadTextures, nothing shipped). Virginie: any colour per pawn (example forest green #226E42 to match Miel's underwear, test copy NsbMouthLipsBigForest in NsbFaceFit), ideally per outfit or occasion. Caramel, Rose, Berry are presets only. Virginie 2026-11-06 (final): the lip colour follows the lipstick worn: lipstick = colourable apparel with no worn graphic on its own layer; outfits and occasions go through the apparel policy, matching an outfit is a dye. One lipstick def per shade family (Virginie 2026-11-06), so each occasion's apparel policy picks the shade; first shades Caramel, Rose, Berry, Forest #226E42, list to settle. Open: dye needs Ideology, mouth body part group, recipe and cost."
   - "2026-11-06: 1.a done: duplicate search (Search-Workshop.sh, pattern lipstick or makeup, run makeup-dup): no mod recolours Facial Animation lips. Makeup Mod (BigOlBullseye.MakeupMod, 3810397741) is a craftable beauty item with no visual; Roo's Tattoos and Roo's Birthmarks and Blemishes are skin marks, not lips."
 updated: 2026-11-17
-protocols_read_sha: e600c8973a869b837f64042a7b3d2c3b2f4c7f92
+protocols_read_sha: 00e8bb2517d9991eb1a5a1f18e7ff0b0c309d059
 ---
 
 # Vanity Case: status
