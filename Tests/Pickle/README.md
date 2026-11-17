@@ -4,6 +4,7 @@ Played inside a running RimWorld by [Pickle](https://github.com/RimWorks/Rimworl
 
 | Feature | Pass | Checks |
 | --- | --- | --- |
+| `02-french` | `wsl-deps.lipstick.map` | Run with -Language French: exact French label and description of the 4 lipsticks, no mod options page, info card of Caramel (capture to read by eye). Written 2026-11-17 on PiT advice, not yet run. |
 | `01-lipstick` | `wsl-deps.lipstick.map` | Six scenarios on a dark-skinned colonist with `MouthLipsBig`: no lipstick (original red), Caramel, Rose, Berry, Forest, and Caramel with the eyes read equal. The step asserts the mouth def; the colour is read on the `@review` capture. |
 
 Pass matrix: one pass, `lipstick`. No optional integration (VTE - Facial Animation supplies the painted lips and is in the map), no DLC dependency, English only (the mod has no Keyed text; the French labels are read at `playTests`). Restart sequence: not relevant.
