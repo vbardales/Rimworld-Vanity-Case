@@ -28,14 +28,27 @@ namespace VanityCase
         }
 
         /// <summary>Recolours <paramref name="rgba"/> (4 bytes per pixel, straight alpha) in place; returns the pixel count changed.</summary>
-        public static int Apply(byte[] rgba, byte tr, byte tg, byte tb)
+        public static int Apply(byte[] rgba, byte tr, byte tg, byte tb) => Apply(rgba, tr, tg, tb, 255, 255, 255);
+
+        /// <summary>
+        /// As above, for a texture the game multiplies by a skin colour at draw. The lips are written as the target
+        /// colour as is (the caller draws with a white material colour); every other opaque pixel (teeth, outline) is
+        /// multiplied by the skin colour here, so it looks as it did when the game applied the skin itself.
+        /// </summary>
+        public static int Apply(byte[] rgba, byte tr, byte tg, byte tb, byte skinR, byte skinG, byte skinB)
         {
             RgbToHsv(tr, tg, tb, out float th, out float ts, out float tv);
             int changed = 0;
             for (int i = 0; i + 3 < rgba.Length; i += 4)
             {
                 byte r = rgba[i], g = rgba[i + 1], b = rgba[i + 2], a = rgba[i + 3];
-                if (!IsLipPixel(r, g, b, a)) continue;
+                if (!IsLipPixel(r, g, b, a))
+                {
+                    rgba[i] = (byte)(r * skinR / 255);
+                    rgba[i + 1] = (byte)(g * skinG / 255);
+                    rgba[i + 2] = (byte)(b * skinB / 255);
+                    continue;
+                }
                 RgbToHsv(r, g, b, out _, out float s, out float v);
                 float nv = Clamp01(tv * (v / ReferenceValue));
                 float sr = s / ReferenceSaturation;

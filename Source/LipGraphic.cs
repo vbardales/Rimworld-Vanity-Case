@@ -10,7 +10,7 @@ namespace VanityCase
     /// </summary>
     public class LipGraphic : Graphic
     {
-        private static readonly Dictionary<(int, uint), Texture2D> TextureCache = new Dictionary<(int, uint), Texture2D>();
+        private static readonly Dictionary<(int, ulong), Texture2D> TextureCache = new Dictionary<(int, ulong), Texture2D>();
         private static readonly Dictionary<(Graphic, uint), Graphic> GraphicCache = new Dictionary<(Graphic, uint), Graphic>();
 
         private readonly Material[] mats = new Material[4];
@@ -42,13 +42,18 @@ namespace VanityCase
             {
                 Material source = original.MatAt(new Rot4((byte)i));
                 if (source == null || !(source.mainTexture is Texture2D tex)) return null;
-                var material = new Material(source) { mainTexture = Recoloured(tex, colour, key) };
+                // Facial Animation puts the skin colour in the mouth material colour and the shader multiplies by it:
+                // draw white and bake the skin into the teeth and outline instead, so the lipstick shade is not darkened.
+                Color32 skin = source.color;
+                ulong textureKey = (ulong)skin.r << 48 | (ulong)skin.g << 40 | (ulong)skin.b << 32 | key;
+                var material = new Material(source) { mainTexture = Recoloured(tex, colour, skin, textureKey) };
+                material.color = new Color(1f, 1f, 1f, source.color.a);
                 graphic.mats[i] = material;
             }
             return graphic;
         }
 
-        private static Texture2D Recoloured(Texture2D source, Color32 colour, uint key)
+        private static Texture2D Recoloured(Texture2D source, Color32 colour, Color32 skin, ulong key)
         {
             if (TextureCache.TryGetValue((source.GetInstanceID(), key), out Texture2D cached)) return cached;
             int w = source.width, h = source.height;
@@ -67,7 +72,7 @@ namespace VanityCase
             {
                 rgba[i * 4] = pixels[i].r; rgba[i * 4 + 1] = pixels[i].g; rgba[i * 4 + 2] = pixels[i].b; rgba[i * 4 + 3] = pixels[i].a;
             }
-            LipRecolour.Apply(rgba, colour.r, colour.g, colour.b);
+            LipRecolour.Apply(rgba, colour.r, colour.g, colour.b, skin.r, skin.g, skin.b);
             for (int i = 0; i < pixels.Length; i++)
                 pixels[i] = new Color32(rgba[i * 4], rgba[i * 4 + 1], rgba[i * 4 + 2], rgba[i * 4 + 3]);
 

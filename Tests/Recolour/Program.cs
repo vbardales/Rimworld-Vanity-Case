@@ -33,6 +33,17 @@ internal static class Program
         LipRecolour.Apply(dark, 0x22, 0x6E, 0x42);
         Check(dark[1] > dark[0] && dark[1] > dark[2] && dark[1] < 0x6E, "half-bright red stays darker than the target");
 
+        var skinLip = new byte[] { 0xED, 0x35, 0x1B, 255 };
+        LipRecolour.Apply(skinLip, 0x22, 0x6E, 0x42, 100, 70, 50);
+        Check(Math.Abs(skinLip[0] - 0x22) <= 1 && Math.Abs(skinLip[1] - 0x6E) <= 1 && Math.Abs(skinLip[2] - 0x42) <= 1,
+            "lip shade is not darkened by the skin colour, got " + skinLip[0] + "," + skinLip[1] + "," + skinLip[2]);
+        var skinTeeth = new byte[] { 240, 240, 235, 255 };
+        LipRecolour.Apply(skinTeeth, 0x22, 0x6E, 0x42, 100, 70, 50);
+        Check(skinTeeth[0] == 240 * 100 / 255 && skinTeeth[1] == 240 * 70 / 255 && skinTeeth[2] == 235 * 50 / 255, "teeth take the skin colour");
+        var skinClear = new byte[] { 240, 240, 235, 0 };
+        LipRecolour.Apply(skinClear, 0x22, 0x6E, 0x42, 100, 70, 50);
+        Check(skinClear[3] == 0, "alpha unchanged with skin");
+
         if (args.Length == 2)
         {
             Directory.CreateDirectory(args[1]);

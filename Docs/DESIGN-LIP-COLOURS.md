@@ -104,3 +104,11 @@ feature needs shipped textures (tattoos, for example), they are drawn for this m
   test and fail soft (log once, original lips) if it changes.
 - Recolour cost on a colour change: a few small textures, main thread; keep it off the per-frame path.
 - A hue band tuned on VTE red may not suit lip mouths of other face mods; the source list keeps that explicit.
+
+## Skin colour at draw (2026-11-17)
+
+Facial Animation's mouth material carries the skin colour and the shader multiplies the texture by it, so a lip
+shade drawn on dark skin came out darkened (SanctuaryBacklot, Miel, GES_Skin_Chocolate: Caramel and Rose alike).
+`LipGraphic` now reads the skin colour from the source material, draws with a white material colour and bakes the
+skin into the non-lip pixels (teeth, outline) in `LipRecolour.Apply`. The texture cache key includes the skin colour.
+Proved by pure checks in `Tests/Recolour`; unverified in game until a Pickle ticket on the rebuilt DLL.
