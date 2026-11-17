@@ -5,20 +5,21 @@ repo: Rimworld-Vanity-Case
 remote: https://github.com/vbardales/Rimworld-Vanity-Case.git
 visibility: public             # original creation, nothing taken from another mod (PUBLISHING.md, "Nommage"); the GitHub repository is not created yet
 detached: yes
-workflow_stage: localize[1.0.0]
+workflow_stage: writeTests[1.0.0]
 licence: original
 licence_at: "2026-11-06: original work, MIT (LICENSE and Mod/LICENSE). No third-party file: Facial Animation (Nals) is a dependency, Vanilla Textures Expanded - Facial Animation lips are recoloured in memory at run time, never copied (Docs/DESIGN-LIP-COLOURS.md)."
 upstream_mod_remotes: N/A      # no source mod: Facial Animation and VTE - Facial Animation are a dependency and an optional input, none of their files is used
 settings_audit: not_applicable
-localization: partial
+localization: complete
 translation_en: complete
-translation_fr: partial
+translation_fr: complete
 dependencies: complete         # 2026-11-08, record in remaining (4.g)
 workshop_required_items: n/a, not released yet   # owner 2026-11-10 (AUDIT 4.g): prepublication 0.1.0 item only, Required items set by hand at writeReleaseDocs or publish
 workshop: none
 published: no
 tested_on: never
 remaining:
+  - "2026-11-17: localize done (6.g validated by Virginie, round 3 green). Now writeTests[1.0.0]: 7.a scenarios in TESTING.md (lipstick on Miel dark skin, eyes unchanged, no lipstick keeps red, apparel policy), 7.b tests (Tests/Recolour is the harness, name it with its count, no csproj named *.Tests.csproj), 7.d Pickle suite and Tests/Pickle/Inbox, About.xml description to update (work in progress, Interface in English). SaB ticket 61e3 (eyes fix 41c9a46) pending."
   - "2026-11-17: localize: ChatGPT review green (round 3, 0 applied), Translation audit written (6.h). Open 6.g: Virginie French review of the 10 keys (TRANSLATION_REVIEW.md), then translation_fr and localization complete and 6.i to writeTests."
   - "2026-11-17: localize: French DefInjected written (10 keys, Mod/Languages/French), Check-Translations PASS. ChatGPT round 1: English description rewording rejected (taste, current wording natural), PUBLICATION.md absent (writeReleaseDocs), proper nouns Facial Animation and Vanilla Textures Expanded await Virginie and Audit TITLE? answer. Next: /review-translation 1 again (round 2), Translation audit section, Virginie French review, then 6.i."
   - "2026-11-17: REPLAY whole chain (ledger .replays/VanityCase-20261117c.tsv): code[1.0.0] to localize[1.0.0]. 4.g fixed in place (workshop_required_items added). First open 6.a: no text inventory, no Translation audit section, 10 French keys missing (Check-Translations), TRANSLATION_REVIEW.md to make, /review-translation then Virginie review. Also at later stages: Preview.png missing (mountPreview), About.xml description says work in progress and Interface in English (fix at localize and writeReleaseDocs), no unit-test project reason for 7.b (Tests/Recolour is the harness)."
@@ -37,7 +38,7 @@ remaining:
   - "2026-11-06: unverified: lip colours (implemented, 3.a closed), approach in Docs/DESIGN-LIP-COLOURS.md (recolour installed VTE lip textures in memory on demand, Harmony postfix on Facial Animation's MouthControllerComp.LoadTextures, nothing shipped). Virginie: any colour per pawn (example forest green #226E42 to match Miel's underwear, test copy NsbMouthLipsBigForest in NsbFaceFit), ideally per outfit or occasion. Caramel, Rose, Berry are presets only. Virginie 2026-11-06 (final): the lip colour follows the lipstick worn: lipstick = colourable apparel with no worn graphic on its own layer; outfits and occasions go through the apparel policy, matching an outfit is a dye. One lipstick def per shade family (Virginie 2026-11-06), so each occasion's apparel policy picks the shade; first shades Caramel, Rose, Berry, Forest #226E42, list to settle. Open: dye needs Ideology, mouth body part group, recipe and cost."
   - "2026-11-06: 1.a done: duplicate search (Search-Workshop.sh, pattern lipstick or makeup, run makeup-dup): no mod recolours Facial Animation lips. Makeup Mod (BigOlBullseye.MakeupMod, 3810397741) is a craftable beauty item with no visual; Roo's Tattoos and Roo's Birthmarks and Blemishes are skin marks, not lips."
 updated: 2026-11-17
-protocols_read_sha: 00e8bb2517d9991eb1a5a1f18e7ff0b0c309d059
+protocols_read_sha: 60a2e95e8b1f50ee888a9b04bc0939da4a4c636d
 ---
 
 # Vanity Case: status
@@ -81,4 +82,4 @@ In-game check (no empty Mod options page, no shortcut) stays `unverified` until 
 Inventory: Defs and Source read; no setting, no letter, no message, no text built in code. `Check-Translations.ps1`: PASS, 10 source texts and French injections.
 Mod names in French texts: `[NL] Facial Animation - WIP (Visage Animé, en travaux)` (registry form, Audit 2026-11-17); Vanilla Textures Expanded stays English alone in the label (rule of labels), full form `Vanilla Textures Expanded (Extension Vanilla Textures) - [NL] Facial Animation` recorded in `Docs/review-names.md`.
 ChatGPT `/review-translation`, page 1: round 1 (1 applied: French delivered; 4 English rewordings rejected as taste), round 2 (1 applied: berry wording), round 3 (0 applied, page green). PUBLICATION.md absent: writeReleaseDocs.
-Virginie's French review: not done (awaited, 6.g). `translation_fr` stays `partial` until she validates. In-game checks (raw keys, fallback text, clipping) `unverified` until playTests.
+Virginie's French review (6.g): validated by Virginie on 2026-11-17, revision 41c9a46, no correction. `translation_fr` and `localization` complete. In-game checks (raw keys, fallback text, clipping) `unverified` until playTests.
