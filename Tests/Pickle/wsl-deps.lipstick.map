@@ -1,0 +1,7 @@
+# Pass "lipstick": Facial Animation (hard dependency), VTE - Facial Animation (the painted lips) and the shared tools (colonist race, screenshot studio, camera zoom, coat steps) that build a face and take the picture.
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
+nelim.pickletools.coatsteps path:PickleTools/CoatSteps/Mod
+Nals.FacialAnimation 1635901197
+VanillaExpanded.VTEXE.FacialAnims 2816938779

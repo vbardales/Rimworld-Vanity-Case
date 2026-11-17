@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "test": {
+    "profiles": {
+      "lipstick": {
+        "requires": [
+          { "packageId": "VanillaExpanded.VTEXE.FacialAnims", "workshopId": "2816938779" }
+        ],
+        "depMap": "Tests/Pickle/wsl-deps.lipstick.map"
+      }
+    },
+    "defaultProfile": "lipstick"
+  },
+  "defs": { "defines": ["ThingDef", "ApparelLayerDef"], "relies": ["MouthTypeDef"] }
+}

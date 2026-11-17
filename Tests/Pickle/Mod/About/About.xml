@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Vanity Case - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.vanitycase.pickletests</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>In-game functional tests for Vanity Case, run by Pickle. Development only: never published.
+
+Only the built-in Pickle steps and Nelim's Pickle Tools (ColonistRace, ScreenshotStudio, CameraZoom, CoatSteps) are used. Nothing here clicks through OS input.</description>
+  <modDependencies>
+    <li>
+      <packageId>nelim.vanitycase</packageId>
+      <displayName>Vanity Case</displayName>
+    </li>
+    <li>
+      <packageId>rimworks.pickle</packageId>
+      <displayName>Pickle</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3791648678</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>nelim.vanitycase</li>
+    <li>rimworks.pickle</li>
+    <li>Nals.FacialAnimation</li>
+    <li>VanillaExpanded.VTEXE.FacialAnims</li>
+  </loadAfter>
+</ModMetaData>
