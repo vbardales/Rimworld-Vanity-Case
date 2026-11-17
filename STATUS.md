@@ -5,7 +5,7 @@ repo: Rimworld-Vanity-Case
 remote: https://github.com/vbardales/Rimworld-Vanity-Case.git
 visibility: public             # original creation, nothing taken from another mod (PUBLISHING.md, "Nommage"); the GitHub repository is not created yet
 detached: yes
-workflow_stage: ecosystem
+workflow_stage: code[1.0.0]
 licence: original
 licence_at: "2026-11-06: original work, MIT (LICENSE and Mod/LICENSE). No third-party file: Facial Animation (Nals) is a dependency, Vanilla Textures Expanded - Facial Animation lips are recoloured in memory at run time, never copied (Docs/DESIGN-LIP-COLOURS.md)."
 upstream_mod_remotes: N/A      # no source mod: Facial Animation and VTE - Facial Animation are a dependency and an optional input, none of their files is used
@@ -18,6 +18,7 @@ workshop: none
 published: no
 tested_on: never
 remaining:
+  - "2026-11-17: ecosystem done (2.h, report e600c89, Ecosystem section). Now code[1.0.0] (2.i). Chain 3 to 6 not replayed since: run replay-audit 3..6 next; 3.a to 5 expected done, localize French keys (10) open."
   - "2026-11-17: REPLAY 1.a to 2.i (ledger .replays/VanityCase-20261117.tsv): stage moved back localize[1.0.0] to ecosystem. 2.h open: no docs/inventory/ecosystem-steam/VanityCase.md, no Ecosystem section here (stage added 2026-11-16, mod skipped it). Next: send ECOSYSTEM? to PiI (VanityCase, FA Nals.FacialAnimation, VTE VanillaExpanded.VTEXE.FacialAnims 2816938779), copy summary into an Ecosystem section, then 2.i to code[1.0.0] and replay 3 to 6 (settings not_applicable and Settings audit already written 2026-11-17, localize French keys still missing)."
   - "2026-11-17: settings done (not_applicable, Settings audit section). Now localize[1.0.0]: 10 French keys missing (Check-Translations: 5 lipstick ThingDefs label+description x4, LipSourceDef, ApparelLayerDef), TRANSLATION_REVIEW.md, /review-translation then Virginie review. Uncommitted, not mine: Mod/About/About.xml (modVersion 0.1.0, BOM added) and Mod/About/PublishedFileId.txt (3838120911), prepublication leftovers: ask Virginie before committing. Preview.png missing (mountPreview)."
   - "2026-11-08: 4.g DEPENDENCY RECORD (repo revision 98678ee). Hard (modDependencies in About.xml): Nals.FacialAnimation ([NL] Facial Animation, Workshop 1635901197; Source/ patches its MouthControllerComp.LoadTextures by reflection) and brrainz.harmony (2009463077; Harmony postfix). Optional, no hard dependency: VanillaExpanded.VTEXE.FacialAnims (VTE - Facial Animation, 2816938779), ordered by loadAfter, its lip textures read through LipSourceDef, mod works without it (no source, no recolour). OptionalCompat.xml: none needed (VTE has loadAfter, no patch operation, no MayRequire; Check-OptionalCompat 0 target, 0 declared). DLC: none (dye needs Ideology: open decision, not a dependency yet). incompatibleWith: none known. 4.h next: settings."
@@ -30,7 +31,7 @@ remaining:
   - "2026-11-06: unverified: lip colours (implemented, 3.a closed), approach in Docs/DESIGN-LIP-COLOURS.md (recolour installed VTE lip textures in memory on demand, Harmony postfix on Facial Animation's MouthControllerComp.LoadTextures, nothing shipped). Virginie: any colour per pawn (example forest green #226E42 to match Miel's underwear, test copy NsbMouthLipsBigForest in NsbFaceFit), ideally per outfit or occasion. Caramel, Rose, Berry are presets only. Virginie 2026-11-06 (final): the lip colour follows the lipstick worn: lipstick = colourable apparel with no worn graphic on its own layer; outfits and occasions go through the apparel policy, matching an outfit is a dye. One lipstick def per shade family (Virginie 2026-11-06), so each occasion's apparel policy picks the shade; first shades Caramel, Rose, Berry, Forest #226E42, list to settle. Open: dye needs Ideology, mouth body part group, recipe and cost."
   - "2026-11-06: 1.a done: duplicate search (Search-Workshop.sh, pattern lipstick or makeup, run makeup-dup): no mod recolours Facial Animation lips. Makeup Mod (BigOlBullseye.MakeupMod, 3810397741) is a craftable beauty item with no visual; Roo's Tattoos and Roo's Birthmarks and Blemishes are skin marks, not lips."
 updated: 2026-11-17
-protocols_read_sha: e19a3fd36ee9105d052d5ae434329a7b60db3327
+protocols_read_sha: e600c8973a869b837f64042a7b3d2c3b2f4c7f92
 ---
 
 # Vanity Case: status
@@ -57,3 +58,13 @@ let a player break the recolour. No hidden-by-default behaviour, no per-save sta
 Verified in sources: no MainButtonDef, no ModSettings, no DoSettingsWindowContents, no
 GetSettings text (Mod/ and Source/). Check-SettingsContract.ps1 run on this revision.
 In-game check (no empty Mod options page, no shortcut) stays `unverified` until playTests.
+
+## Ecosystem
+
+2026-11-17, PiI report `docs/inventory/ecosystem-steam/VanityCase.md` (commit e600c89 of the protocols repository). 20 Steam queries plus a local scan (104 mods name Nals.FacialAnimation or VanillaExpanded.VTEXE.FacialAnims).
+
+- Duplicates, forks, replacements: none. "lipstick" returns 0 results, no mod recolours Facial Animation lips. Closest, different job: Makeup Mod 3810397741 (craftable beauty item, no visual).
+- Patches of the parent, Facial Animation 1635901197: 6 (1.7 Compatibility Patch 3821248395, Init Fix 3609895011, Performance Patch 3790129900, Compatibility Project 3585705988, Adjustments for VTE 3532050275, Tattoo Face Scars VTE patch 3832065825). About 80 per-race patches, not listed.
+- Retextures to check at playTests: Reel's 3118315633, Facial Animation - Retexture 3271240549, Nice Facial Animation 3302079637, Visual beauty 3685072616, More and Retextured Head Shapes for VTE 3407049972.
+- Translations of the parent: none found. Nothing to integrate at localize beyond English and French.
+- Verdict: own niche, the mod goes on. No patch or retexture of an original fires on us (no original). Play-test check: lips still show with the retexture packs and with VTE heads.
