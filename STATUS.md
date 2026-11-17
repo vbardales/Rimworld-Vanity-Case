@@ -17,8 +17,10 @@ dependencies: complete         # 2026-11-08, record in remaining (4.g)
 workshop_required_items: n/a, not released yet   # owner 2026-11-10 (AUDIT 4.g): prepublication 0.1.0 item only, Required items set by hand at writeReleaseDocs or publish
 workshop: none
 published: no
-tested_on: never
+tested_on: 2026-11-17 pickle 4a1d1d2 (1.6)
+tested_1_7: no
 remaining:
+  - "2026-11-17: 1.7 pass done: tested_1_7 no (Docs/runs/2026-11-17-1.7.md). cd30 6/6 green but portraits show the lipstick colour NOT applied on 1.7 (same dark red as no lipstick); 1.6 fine (80f3). Cause open: FA 1.7 build or Harmony postfix. Next: 1.7 ticket with Player.log, or 1.7 fix; supportedVersions stays 1.6. Other playTests items open: French by eye, settings no-page check, 8.m code review."
   - "2026-11-17: playTests diagnostic ticket 80f3 green on c47c306: 6/6 (lipstick-none-keeps-red, caramel, rose, berry, forest, eyes-unchanged), 0 failures, evidence Tests/Pickle/Evidence/lipstick-diagnostic (git-ignored, local; portraits read: none keeps dark red lips, caramel clearly orange). Weak: lipstick-eyes-unchanged shows plain black eyes (no eyeball type on the fixture), real eye proof is SaB ticket 61e3. Player.log: no VanityCase warning or error. Still open at playTests: French texts by eye (item card), settings no-page check, Preview.png absent (mountPreview), 1.7 pass, dye and policy behaviours (TESTING rows 7 and 8) unverified."
   - "2026-11-17: 8.0 ecosystem refresh done (PiI 4e59b10, nothing new for lips), Ecosystem section updated. Next: file the 01-lipstick tickets."
   - "2026-11-17: CI/CD skeleton received and checked (.github/publish.config.json: item 3838120911, nelim.vanitycase, requirePaths dll Defs Languages, preview About/Preview.png, gallery Art/Gallery, build Source/VanityCase.csproj; junction RimWorld/Mods/VanityCase mounted per CI/CD). Tests/Test-Mod.ps1 run at 741c171+: 4 passed, 1 failed (Check-ModBasics: Preview.png missing, expected until mountPreview), DefRefs, Textures, PatchTargets, ConfigErrors ok. No Tests/Rule-*.ps1: own values are covered by Tests/Recolour.Tests.csproj and the defs by the shared checks. publish dry-run waits PUBLICATION.md and CHANGELOG [1.0.0] (writeReleaseDocs)."
