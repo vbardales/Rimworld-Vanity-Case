@@ -1,0 +1,17 @@
+{
+  "templateStamp": "f2b2926f4a43",
+  "workshopId": "3838120911",
+  "packageId": "nelim.vanitycase",
+  "releaseTitle": "Vanity Case {version}",
+  "requirePaths": [
+    "Assemblies/VanityCase.dll",
+    "Defs",
+    "Languages"
+  ],
+  "forbidPaths": [],
+  "previewFile": "About/Preview.png",
+  "galleryDir": "Art/Gallery",
+  "build": {
+    "project": "Source/VanityCase.csproj"
+  }
+}
