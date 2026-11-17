@@ -19,6 +19,7 @@ workshop: none
 published: no
 tested_on: never
 remaining:
+  - "2026-11-17: eye fix 41c9a46 seen in game by SaB (ticket 61e3 green, Miel): both eyes equal orange with Caramel worn, Caramel Rose Forest lips clear. Evidence in SanctuaryBacklot/Tests/Pickle/Evidence/miel-lipstick/faces-after-vac-eye-fix.jpg, not a VanityCase ticket."
   - "2026-11-17: localize done (6.g validated by Virginie, round 3 green). Now writeTests[1.0.0]: 7.a scenarios in TESTING.md (lipstick on Miel dark skin, eyes unchanged, no lipstick keeps red, apparel policy), 7.b tests (Tests/Recolour is the harness, name it with its count, no csproj named *.Tests.csproj), 7.d Pickle suite and Tests/Pickle/Inbox, About.xml description to update (work in progress, Interface in English). SaB ticket 61e3 (eyes fix 41c9a46) pending."
   - "2026-11-17: localize: ChatGPT review green (round 3, 0 applied), Translation audit written (6.h). Open 6.g: Virginie French review of the 10 keys (TRANSLATION_REVIEW.md), then translation_fr and localization complete and 6.i to writeTests."
   - "2026-11-17: localize: French DefInjected written (10 keys, Mod/Languages/French), Check-Translations PASS. ChatGPT round 1: English description rewording rejected (taste, current wording natural), PUBLICATION.md absent (writeReleaseDocs), proper nouns Facial Animation and Vanilla Textures Expanded await Virginie and Audit TITLE? answer. Next: /review-translation 1 again (round 2), Translation audit section, Virginie French review, then 6.i."
