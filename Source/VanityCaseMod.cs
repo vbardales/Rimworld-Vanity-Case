@@ -21,6 +21,8 @@ namespace VanityCase
         private static HashSet<string> sourceMouths = new HashSet<string>();
         private static ApparelLayerDef lipsLayer;
         private static Type mouthCompType;
+        private static Type mouthShapeType;
+        private static Type collectionDefinition;
         private static PropertyInfo faceTypeProperty;
         private static MethodInfo setDirtyMethod;
 
@@ -36,6 +38,8 @@ namespace VanityCase
                     Log.Message("[Vanity Case] Facial Animation not found: lipstick colours are off.");
                     return;
                 }
+                mouthShapeType = mouthShape;
+                collectionDefinition = collection;
                 faceTypeProperty = AccessTools.Property(mouthCompType, "FaceType");
                 setDirtyMethod = AccessTools.Method(mouthCompType, "SetDirty");
                 MethodInfo getSub = AccessTools.Method(collection.MakeGenericType(mouthShape), "GetSubGraphic");
@@ -76,9 +80,20 @@ namespace VanityCase
         private static ThingComp MouthComp(Pawn pawn) =>
             pawn.AllComps.FirstOrDefault(c => mouthCompType.IsInstanceOfType(c));
 
-        private static void AfterGetSubGraphic(Pawn pawn, ref Graphic __result)
+        private static bool IsMouthCollection(object instance)
+        {
+            for (Type t = instance?.GetType(); t != null; t = t.BaseType)
+                if (t.IsGenericType && t.GetGenericTypeDefinition() == collectionDefinition)
+                    return t.GetGenericArguments()[0] == mouthShapeType;
+            return false;
+        }
+
+        private static void AfterGetSubGraphic(object __instance, Pawn pawn, ref Graphic __result)
         {
             if (__result == null || sourceMouths.Count == 0) return;
+            // The method body is shared by every NLGraphic_Collection<T> with a reference type T (eyes, brows, lids...),
+            // so Harmony patches them all: only a mouth collection may be recoloured.
+            if (!IsMouthCollection(__instance)) return;
             Color32? colour = WornLipstickColour(pawn);
             if (colour == null) return;
             ThingComp comp = MouthComp(pawn);
