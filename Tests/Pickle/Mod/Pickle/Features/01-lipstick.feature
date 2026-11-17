@@ -22,11 +22,8 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" mouth is "MouthLipsBig"
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
-    And Nelim's Pickle Tools: the game is advanced by 60 ticks
-    And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
-    And I take a screenshot "lipstick-none-keeps-red"
     And Nelim's Pickle Tools: a portrait of "Tester" is saved as "lipstick-none-keeps-red-face" at 512 pixels and zoom 3
 
   @review
@@ -41,11 +38,8 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" wears "VanityCase_LipstickCaramel"
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
-    And Nelim's Pickle Tools: the game is advanced by 60 ticks
-    And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
-    And I take a screenshot "lipstick-caramel"
     And Nelim's Pickle Tools: a portrait of "Tester" is saved as "lipstick-caramel-face" at 512 pixels and zoom 3
 
   @review
@@ -60,11 +54,8 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" wears "VanityCase_LipstickRose"
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
-    And Nelim's Pickle Tools: the game is advanced by 60 ticks
-    And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
-    And I take a screenshot "lipstick-rose"
     And Nelim's Pickle Tools: a portrait of "Tester" is saved as "lipstick-rose-face" at 512 pixels and zoom 3
 
   @review
@@ -79,11 +70,8 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" wears "VanityCase_LipstickBerry"
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
-    And Nelim's Pickle Tools: the game is advanced by 60 ticks
-    And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
-    And I take a screenshot "lipstick-berry"
     And Nelim's Pickle Tools: a portrait of "Tester" is saved as "lipstick-berry-face" at 512 pixels and zoom 3
 
   @review
@@ -98,11 +86,8 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" wears "VanityCase_LipstickForest"
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
-    And Nelim's Pickle Tools: the game is advanced by 60 ticks
-    And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
-    And I take a screenshot "lipstick-forest"
     And Nelim's Pickle Tools: a portrait of "Tester" is saved as "lipstick-forest-face" at 512 pixels and zoom 3
 
   @review
@@ -118,9 +103,6 @@ Feature: Vanity Case lipstick
     And Nelim's Pickle Tools: "Tester" eye colour is rgb (255, 140, 0)
     And Nelim's Pickle Tools: "Tester" face is held neutral
     And Nelim's Pickle Tools: "Tester" stands at (112, 200) facing South
-    And Nelim's Pickle Tools: the game is advanced by 60 ticks
-    And Nelim's Pickle Tools: the camera is centered on "Tester" at root size 2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then Nelim's Pickle Tools: "Tester" mouth reads "MouthLipsBig"
-    And I take a screenshot "lipstick-eyes-unchanged"
     And Nelim's Pickle Tools: a portrait of "Tester" is saved as "lipstick-eyes-unchanged-face" at 512 pixels and zoom 3

@@ -15,3 +15,5 @@ Submit-PickleRun.ps1 -Mod VanityCase -Owner local_<id> -Label "lipstick caramel"
 ```
 
 Prior evidence from another suite: SanctuaryBacklot tickets 4ca4 and 61e3 (Miel, 2026-11-17) saw the same behaviour; it is not a proof of this suite.
+
+2026-11-17: the camera and full-screen screenshot steps were dropped (the 1.7 lane timed out on `the camera is centered on` in tickets fb55 and 83ab, even after `the game is advanced by 60 ticks`); the evidence is the face portrait of each scenario.
