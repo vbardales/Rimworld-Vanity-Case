@@ -4,6 +4,7 @@
 @requires:nelim.pickletools.colonistrace
 @requires:nelim.pickletools.stagedecor
 @requires:nelim.pickletools.inspecttabs
+@timeout:3000
 # Staged photographs, not assertions (GALLERY.md): a person opens each image. Pass: wsl-deps.gallery.map (NSB base map wsl-deps.sanctuary-nelim.map plus the lipstick map).
 # SHOTLIST of 2026-11-17 (write-shotlist, first pass). Opus director pass kept: tighter zoom, tube counter 4-3-2-1, no mirror, Berry on Nelim, no red-on-red, hut at 18h and 19h, no walking pose. Not kept: Rose on Miel (Caramel is her validated lipstick), Gear-tab window (no step; the item card of 02-french already exists).
 # STORY. "Four shades, one day". Nelim (protagonist, NSB canon) sets up a dressing corner on the veranda at 8h to help her friend Miel (lead) pick a lipstick for tea at the hut.
@@ -40,22 +41,65 @@ Feature: Vanity Case gallery
     Given the save "Nelims-tribe" is loaded
     And game speed is paused
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: the eclipse of the map is ended
+    And Nelim's Pickle Tools: all filth is cleaned
+    And Nelim's Pickle Tools: all humans but "Nelim" are removed
     And I set the weather to "Clear"
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
-    And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" dyed rgb (31, 122, 92)
-    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
-    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
-    And Nelim's Pickle Tools: "Nelim" face is held neutral
-    And Nelim's Pickle Tools: "Miel" face kit is "smile"
-    And Nelim's Pickle Tools: "Miel" mouth is "MouthLipsBig"
-    And Nelim's Pickle Tools: "Miel" face is held neutral
-    And Nelim's Pickle Tools: studio presentation mode is enabled
 
   @review @gallery
   Scenario: vanity-1-dressing-corner
     Given I set the hour to 8
-    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" dyed rgb (240, 232, 214)
-    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Overalls" dyed rgb (197, 138, 58)
+    And Nelim's Sanctuary: the animals are kept out of the sanctuary "terrace"
+    And Nelim's Sanctuary: I am at the sanctuary "terrace"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the colonist bar is hidden
+    And Nelim's Pickle Tools: the learning helper is hidden
+    And Nelim's Pickle Tools: the tooltips are hidden
+    And Nelim's Pickle Tools: the resource readout is hidden
+    And Nelim's Pickle Tools: the selection brackets are hidden
+    And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Pickle Tools: "Nelim" face tattoo is "Face_Love"
+    And Nelim's Pickle Tools: "Nelim" body tattoo is "Body_Heart"
+    And Nelim's Pickle Tools: "Nelim" face skin is "SkinNormal"
+    And Nelim's Pickle Tools: "Nelim" is undressed
+    And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
+    And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_PAESmallEarrings" made of "Gold"
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
+    And Nelim's Pickle Tools: "Nelim" brows are "BrowNormal"
+    And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" eyeballs are "Swift"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: a colonist "Miel" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Miel" loses all genes
+    And Nelim's Pickle Tools: "Miel" gender is Female
+    And "Miel" is 34 years old
+    And Nelim's Pickle Tools: "Miel" body type is Thin
+    And Nelim's Pickle Tools: "Miel" head type is "Female_AverageWide"
+    And Nelim's Pickle Tools: "Miel" has the gene "GES_Skin_Chocolate"
+    And Nelim's Pickle Tools: "Miel" has the gene "Hair_DarkBlack"
+    And Nelim's Pickle Tools: "Miel" has the gene "Eyes_Orange"
+    And Nelim's Pickle Tools: "Miel" hair colour is taken from its genes
+    And Nelim's Pickle Tools: "Miel" hairstyle is "Roo_Royal_NaturalcurlsHD"
+    And Nelim's Pickle Tools: "Miel" beard is "NoBeard"
+    And Nelim's Pickle Tools: "Miel" face tattoo is "none"
+    And Nelim's Pickle Tools: "Miel" body tattoo is "STribalTat_Body_SacredGrass"
+    And Nelim's Pickle Tools: "Miel" face skin is "SkinEyeshadow"
+    And Nelim's Pickle Tools: "Miel" is undressed
+    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" made of "Cloth"
+    And Nelim's Pickle Tools: the "UnderWhere_Chestwrap" worn by "Miel" is dyed rgb (240, 232, 214)
+    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Overalls"
+    And Nelim's Pickle Tools: the "VAE_Apparel_Overalls" worn by "Miel" is dyed rgb (197, 138, 58)
+    And Nelim's Pickle Tools: "Miel" face kit is "smile"
+    And Nelim's Pickle Tools: "Miel" mouth is "MouthLipsBig"
+    And Nelim's Pickle Tools: "Miel" brows are "BrowTriangle"
+    And Nelim's Pickle Tools: "Miel" lids are "LidFlirty"
+    And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
+    And Nelim's Pickle Tools: "Miel" face is held neutral
+    And Nelim's Pickle Tools: "Miel" facial expression is "normal"
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickCaramel" exactly at (195, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (196, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickBerry" exactly at (197, 122)
@@ -76,8 +120,58 @@ Feature: Vanity Case gallery
   @review @gallery
   Scenario: vanity-2-caramel
     Given I set the hour to 9
-    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" dyed rgb (240, 232, 214)
-    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Overalls" dyed rgb (197, 138, 58)
+    And Nelim's Sanctuary: the animals are kept out of the sanctuary "terrace"
+    And Nelim's Sanctuary: I am at the sanctuary "terrace"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the colonist bar is hidden
+    And Nelim's Pickle Tools: the learning helper is hidden
+    And Nelim's Pickle Tools: the tooltips are hidden
+    And Nelim's Pickle Tools: the resource readout is hidden
+    And Nelim's Pickle Tools: the selection brackets are hidden
+    And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Pickle Tools: "Nelim" face tattoo is "Face_Love"
+    And Nelim's Pickle Tools: "Nelim" body tattoo is "Body_Heart"
+    And Nelim's Pickle Tools: "Nelim" face skin is "SkinNormal"
+    And Nelim's Pickle Tools: "Nelim" is undressed
+    And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
+    And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_PAESmallEarrings" made of "Gold"
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
+    And Nelim's Pickle Tools: "Nelim" brows are "BrowNormal"
+    And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" eyeballs are "Swift"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: a colonist "Miel" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Miel" loses all genes
+    And Nelim's Pickle Tools: "Miel" gender is Female
+    And "Miel" is 34 years old
+    And Nelim's Pickle Tools: "Miel" body type is Thin
+    And Nelim's Pickle Tools: "Miel" head type is "Female_AverageWide"
+    And Nelim's Pickle Tools: "Miel" has the gene "GES_Skin_Chocolate"
+    And Nelim's Pickle Tools: "Miel" has the gene "Hair_DarkBlack"
+    And Nelim's Pickle Tools: "Miel" has the gene "Eyes_Orange"
+    And Nelim's Pickle Tools: "Miel" hair colour is taken from its genes
+    And Nelim's Pickle Tools: "Miel" hairstyle is "Roo_Royal_NaturalcurlsHD"
+    And Nelim's Pickle Tools: "Miel" beard is "NoBeard"
+    And Nelim's Pickle Tools: "Miel" face tattoo is "none"
+    And Nelim's Pickle Tools: "Miel" body tattoo is "STribalTat_Body_SacredGrass"
+    And Nelim's Pickle Tools: "Miel" face skin is "SkinEyeshadow"
+    And Nelim's Pickle Tools: "Miel" is undressed
+    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" made of "Cloth"
+    And Nelim's Pickle Tools: the "UnderWhere_Chestwrap" worn by "Miel" is dyed rgb (240, 232, 214)
+    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Overalls"
+    And Nelim's Pickle Tools: the "VAE_Apparel_Overalls" worn by "Miel" is dyed rgb (197, 138, 58)
+    And Nelim's Pickle Tools: "Miel" also wears "VanityCase_LipstickCaramel"
+    And Nelim's Pickle Tools: "Miel" face kit is "smile"
+    And Nelim's Pickle Tools: "Miel" mouth is "MouthLipsBig"
+    And Nelim's Pickle Tools: "Miel" brows are "BrowTriangle"
+    And Nelim's Pickle Tools: "Miel" lids are "LidFlirty"
+    And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
+    And Nelim's Pickle Tools: "Miel" face is held neutral
+    And Nelim's Pickle Tools: "Miel" facial expression is "normal"
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (196, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickBerry" exactly at (197, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickForest" exactly at (198, 122)
@@ -88,18 +182,68 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 124) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (193, 122) fully grown
     And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (198, 125)
-    And Nelim's Pickle Tools: "Miel" also wears "VanityCase_LipstickCaramel"
     And Nelim's Pickle Tools: "Nelim" stands at (195, 123) facing East
     And Nelim's Pickle Tools: "Miel" stands at (197, 123) facing South
-    And Nelim's Pickle Tools: I frame the cell (197, 123) at zoom 2.6
+    And Nelim's Pickle Tools: the camera frames the head of "Miel" at root size 2.6
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-2-caramel"
 
   @review @gallery
   Scenario: vanity-3-berry
     Given I set the hour to 10
-    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" dyed rgb (240, 232, 214)
-    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Overalls" dyed rgb (197, 138, 58)
+    And Nelim's Sanctuary: the animals are kept out of the sanctuary "terrace"
+    And Nelim's Sanctuary: I am at the sanctuary "terrace"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the colonist bar is hidden
+    And Nelim's Pickle Tools: the learning helper is hidden
+    And Nelim's Pickle Tools: the tooltips are hidden
+    And Nelim's Pickle Tools: the resource readout is hidden
+    And Nelim's Pickle Tools: the selection brackets are hidden
+    And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Pickle Tools: "Nelim" face tattoo is "Face_Love"
+    And Nelim's Pickle Tools: "Nelim" body tattoo is "Body_Heart"
+    And Nelim's Pickle Tools: "Nelim" face skin is "SkinNormal"
+    And Nelim's Pickle Tools: "Nelim" is undressed
+    And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
+    And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_PAESmallEarrings" made of "Gold"
+    And Nelim's Pickle Tools: "Nelim" also wears "VanityCase_LipstickBerry"
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
+    And Nelim's Pickle Tools: "Nelim" brows are "BrowNormal"
+    And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" eyeballs are "Swift"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: a colonist "Miel" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Miel" loses all genes
+    And Nelim's Pickle Tools: "Miel" gender is Female
+    And "Miel" is 34 years old
+    And Nelim's Pickle Tools: "Miel" body type is Thin
+    And Nelim's Pickle Tools: "Miel" head type is "Female_AverageWide"
+    And Nelim's Pickle Tools: "Miel" has the gene "GES_Skin_Chocolate"
+    And Nelim's Pickle Tools: "Miel" has the gene "Hair_DarkBlack"
+    And Nelim's Pickle Tools: "Miel" has the gene "Eyes_Orange"
+    And Nelim's Pickle Tools: "Miel" hair colour is taken from its genes
+    And Nelim's Pickle Tools: "Miel" hairstyle is "Roo_Royal_NaturalcurlsHD"
+    And Nelim's Pickle Tools: "Miel" beard is "NoBeard"
+    And Nelim's Pickle Tools: "Miel" face tattoo is "none"
+    And Nelim's Pickle Tools: "Miel" body tattoo is "STribalTat_Body_SacredGrass"
+    And Nelim's Pickle Tools: "Miel" face skin is "SkinEyeshadow"
+    And Nelim's Pickle Tools: "Miel" is undressed
+    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" made of "Cloth"
+    And Nelim's Pickle Tools: the "UnderWhere_Chestwrap" worn by "Miel" is dyed rgb (240, 232, 214)
+    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Overalls"
+    And Nelim's Pickle Tools: the "VAE_Apparel_Overalls" worn by "Miel" is dyed rgb (197, 138, 58)
+    And Nelim's Pickle Tools: "Miel" also wears "VanityCase_LipstickCaramel"
+    And Nelim's Pickle Tools: "Miel" face kit is "smile"
+    And Nelim's Pickle Tools: "Miel" mouth is "MouthLipsBig"
+    And Nelim's Pickle Tools: "Miel" brows are "BrowTriangle"
+    And Nelim's Pickle Tools: "Miel" lids are "LidFlirty"
+    And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
+    And Nelim's Pickle Tools: "Miel" face is held neutral
+    And Nelim's Pickle Tools: "Miel" facial expression is "normal"
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (195, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickForest" exactly at (198, 122)
     And Nelim's Pickle Tools: I place the decor "Stool" at (199, 123)
@@ -109,21 +253,68 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 124) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (193, 122) fully grown
     And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (198, 125)
-    And Nelim's Pickle Tools: "Nelim" also wears "VanityCase_LipstickBerry"
-    And Nelim's Pickle Tools: "Miel" also wears "VanityCase_LipstickCaramel"
     And Nelim's Pickle Tools: "Nelim" stands at (196, 123) facing South
     And Nelim's Pickle Tools: "Miel" stands at (198, 123) facing West
-    And Nelim's Pickle Tools: I frame the cell (196, 123) at zoom 2.4
+    And Nelim's Pickle Tools: the camera frames the head of "Nelim" at root size 2.4
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-3-berry"
 
   @review @gallery
   Scenario: vanity-4-cloister
     Given I set the hour to 14
-    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" dyed rgb (240, 232, 214)
-    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Overalls" dyed rgb (197, 138, 58)
+    And Nelim's Sanctuary: the animals are kept out of the sanctuary "cloister"
+    And Nelim's Sanctuary: I am at the sanctuary "cloister"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the colonist bar is hidden
+    And Nelim's Pickle Tools: the learning helper is hidden
+    And Nelim's Pickle Tools: the tooltips are hidden
+    And Nelim's Pickle Tools: the resource readout is hidden
+    And Nelim's Pickle Tools: the selection brackets are hidden
+    And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Pickle Tools: "Nelim" face tattoo is "Face_Love"
+    And Nelim's Pickle Tools: "Nelim" body tattoo is "Body_Heart"
+    And Nelim's Pickle Tools: "Nelim" face skin is "SkinNormal"
+    And Nelim's Pickle Tools: "Nelim" is undressed
+    And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
+    And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_PAESmallEarrings" made of "Gold"
     And Nelim's Pickle Tools: "Nelim" also wears "VanityCase_LipstickBerry"
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
+    And Nelim's Pickle Tools: "Nelim" brows are "BrowNormal"
+    And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" eyeballs are "Swift"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: a colonist "Miel" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Miel" loses all genes
+    And Nelim's Pickle Tools: "Miel" gender is Female
+    And "Miel" is 34 years old
+    And Nelim's Pickle Tools: "Miel" body type is Thin
+    And Nelim's Pickle Tools: "Miel" head type is "Female_AverageWide"
+    And Nelim's Pickle Tools: "Miel" has the gene "GES_Skin_Chocolate"
+    And Nelim's Pickle Tools: "Miel" has the gene "Hair_DarkBlack"
+    And Nelim's Pickle Tools: "Miel" has the gene "Eyes_Orange"
+    And Nelim's Pickle Tools: "Miel" hair colour is taken from its genes
+    And Nelim's Pickle Tools: "Miel" hairstyle is "Roo_Royal_NaturalcurlsHD"
+    And Nelim's Pickle Tools: "Miel" beard is "NoBeard"
+    And Nelim's Pickle Tools: "Miel" face tattoo is "none"
+    And Nelim's Pickle Tools: "Miel" body tattoo is "STribalTat_Body_SacredGrass"
+    And Nelim's Pickle Tools: "Miel" face skin is "SkinEyeshadow"
+    And Nelim's Pickle Tools: "Miel" is undressed
+    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" made of "Cloth"
+    And Nelim's Pickle Tools: the "UnderWhere_Chestwrap" worn by "Miel" is dyed rgb (240, 232, 214)
+    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Overalls"
+    And Nelim's Pickle Tools: the "VAE_Apparel_Overalls" worn by "Miel" is dyed rgb (197, 138, 58)
     And Nelim's Pickle Tools: "Miel" also wears "VanityCase_LipstickCaramel"
+    And Nelim's Pickle Tools: "Miel" face kit is "smile"
+    And Nelim's Pickle Tools: "Miel" mouth is "MouthLipsBig"
+    And Nelim's Pickle Tools: "Miel" brows are "BrowTriangle"
+    And Nelim's Pickle Tools: "Miel" lids are "LidFlirty"
+    And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
+    And Nelim's Pickle Tools: "Miel" face is held neutral
+    And Nelim's Pickle Tools: "Miel" facial expression is "normal"
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (176, 129)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (176, 129) is lit
     And Nelim's Pickle Tools: I place the decor "PlantPot" at (181, 127)
@@ -138,9 +329,43 @@ Feature: Vanity Case gallery
   @review @gallery
   Scenario: vanity-5-forest
     Given I set the hour to 18
-    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" dyed rgb (240, 232, 214)
-    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Trousers" dyed rgb (34, 110, 66)
+    And Nelim's Sanctuary: the animals are kept out of the sanctuary "hut"
+    And Nelim's Sanctuary: I am at the sanctuary "hut"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the colonist bar is hidden
+    And Nelim's Pickle Tools: the learning helper is hidden
+    And Nelim's Pickle Tools: the tooltips are hidden
+    And Nelim's Pickle Tools: the resource readout is hidden
+    And Nelim's Pickle Tools: the selection brackets are hidden
+    And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: a colonist "Miel" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Miel" loses all genes
+    And Nelim's Pickle Tools: "Miel" gender is Female
+    And "Miel" is 34 years old
+    And Nelim's Pickle Tools: "Miel" body type is Thin
+    And Nelim's Pickle Tools: "Miel" head type is "Female_AverageWide"
+    And Nelim's Pickle Tools: "Miel" has the gene "GES_Skin_Chocolate"
+    And Nelim's Pickle Tools: "Miel" has the gene "Hair_DarkBlack"
+    And Nelim's Pickle Tools: "Miel" has the gene "Eyes_Orange"
+    And Nelim's Pickle Tools: "Miel" hair colour is taken from its genes
+    And Nelim's Pickle Tools: "Miel" hairstyle is "Roo_Royal_NaturalcurlsHD"
+    And Nelim's Pickle Tools: "Miel" beard is "NoBeard"
+    And Nelim's Pickle Tools: "Miel" face tattoo is "none"
+    And Nelim's Pickle Tools: "Miel" body tattoo is "STribalTat_Body_SacredGrass"
+    And Nelim's Pickle Tools: "Miel" face skin is "SkinEyeshadow"
+    And Nelim's Pickle Tools: "Miel" is undressed
+    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" made of "Cloth"
+    And Nelim's Pickle Tools: the "UnderWhere_Chestwrap" worn by "Miel" is dyed rgb (240, 232, 214)
+    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Trousers"
+    And Nelim's Pickle Tools: the "VAE_Apparel_Trousers" worn by "Miel" is dyed rgb (34, 110, 66)
     And Nelim's Pickle Tools: "Miel" also wears "VanityCase_LipstickForest"
+    And Nelim's Pickle Tools: "Miel" face kit is "smile"
+    And Nelim's Pickle Tools: "Miel" mouth is "MouthLipsBig"
+    And Nelim's Pickle Tools: "Miel" brows are "BrowTriangle"
+    And Nelim's Pickle Tools: "Miel" lids are "LidFlirty"
+    And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
+    And Nelim's Pickle Tools: "Miel" face is held neutral
+    And Nelim's Pickle Tools: "Miel" facial expression is "normal"
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" at (139, 73)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (139, 73) is lit
     And Nelim's Pickle Tools: I place the decor "PlantPot" at (143, 74)
@@ -148,17 +373,66 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (139, 74) fully grown
     And Nelim's Pickle Tools: I place the decor "Stool" at (143, 73)
     And Nelim's Pickle Tools: "Miel" stands at (141, 73) facing South
-    And Nelim's Pickle Tools: I frame the cell (141, 73) at zoom 2.4
+    And Nelim's Pickle Tools: the camera frames the head of "Miel" at root size 2.4
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-5-forest"
 
   @review @gallery
   Scenario: vanity-6-tea
     Given I set the hour to 19
-    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" dyed rgb (240, 232, 214)
-    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Trousers" dyed rgb (34, 110, 66)
-    And Nelim's Pickle Tools: "Miel" also wears "VanityCase_LipstickForest"
+    And Nelim's Sanctuary: the animals are kept out of the sanctuary "hut"
+    And Nelim's Sanctuary: I am at the sanctuary "hut"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the colonist bar is hidden
+    And Nelim's Pickle Tools: the learning helper is hidden
+    And Nelim's Pickle Tools: the tooltips are hidden
+    And Nelim's Pickle Tools: the resource readout is hidden
+    And Nelim's Pickle Tools: the selection brackets are hidden
+    And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Pickle Tools: "Nelim" face tattoo is "Face_Love"
+    And Nelim's Pickle Tools: "Nelim" body tattoo is "Body_Heart"
+    And Nelim's Pickle Tools: "Nelim" face skin is "SkinNormal"
+    And Nelim's Pickle Tools: "Nelim" is undressed
+    And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
+    And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_PAESmallEarrings" made of "Gold"
     And Nelim's Pickle Tools: "Nelim" also wears "VanityCase_LipstickBerry"
+    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
+    And Nelim's Pickle Tools: "Nelim" brows are "BrowNormal"
+    And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" eyeballs are "Swift"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: a colonist "Miel" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Miel" loses all genes
+    And Nelim's Pickle Tools: "Miel" gender is Female
+    And "Miel" is 34 years old
+    And Nelim's Pickle Tools: "Miel" body type is Thin
+    And Nelim's Pickle Tools: "Miel" head type is "Female_AverageWide"
+    And Nelim's Pickle Tools: "Miel" has the gene "GES_Skin_Chocolate"
+    And Nelim's Pickle Tools: "Miel" has the gene "Hair_DarkBlack"
+    And Nelim's Pickle Tools: "Miel" has the gene "Eyes_Orange"
+    And Nelim's Pickle Tools: "Miel" hair colour is taken from its genes
+    And Nelim's Pickle Tools: "Miel" hairstyle is "Roo_Royal_NaturalcurlsHD"
+    And Nelim's Pickle Tools: "Miel" beard is "NoBeard"
+    And Nelim's Pickle Tools: "Miel" face tattoo is "none"
+    And Nelim's Pickle Tools: "Miel" body tattoo is "STribalTat_Body_SacredGrass"
+    And Nelim's Pickle Tools: "Miel" face skin is "SkinEyeshadow"
+    And Nelim's Pickle Tools: "Miel" is undressed
+    And Nelim's Pickle Tools: "Miel" wears "UnderWhere_Chestwrap" made of "Cloth"
+    And Nelim's Pickle Tools: the "UnderWhere_Chestwrap" worn by "Miel" is dyed rgb (240, 232, 214)
+    And Nelim's Pickle Tools: "Miel" also wears "VAE_Apparel_Trousers"
+    And Nelim's Pickle Tools: the "VAE_Apparel_Trousers" worn by "Miel" is dyed rgb (34, 110, 66)
+    And Nelim's Pickle Tools: "Miel" also wears "VanityCase_LipstickForest"
+    And Nelim's Pickle Tools: "Miel" face kit is "smile"
+    And Nelim's Pickle Tools: "Miel" mouth is "MouthLipsBig"
+    And Nelim's Pickle Tools: "Miel" brows are "BrowTriangle"
+    And Nelim's Pickle Tools: "Miel" lids are "LidFlirty"
+    And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
+    And Nelim's Pickle Tools: "Miel" face is held neutral
+    And Nelim's Pickle Tools: "Miel" facial expression is "normal"
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" at (139, 73)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (139, 73) is lit
     And Nelim's Pickle Tools: I place the decor "PlantPot" at (143, 74)
@@ -176,6 +450,8 @@ Feature: Vanity Case gallery
   @review @gallery
   Scenario: vanity-7-item-card
     Given I set the hour to 12
+    And Nelim's Sanctuary: I am at the sanctuary "window-backdrop-for-height"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickCaramel" at (90, 140)
     And Nelim's Pickle Tools: I frame the cell (90, 140) at zoom 6
     When Nelim's Pickle Tools: I select the thing of def "VanityCase_LipstickCaramel" at (90, 140)
