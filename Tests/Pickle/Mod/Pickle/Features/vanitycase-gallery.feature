@@ -23,9 +23,9 @@
 #   3. vanity-3-berry; terrace; 10h; zoom 2.4
 #        Nelim at (196, 123) facing South wearing VanityCase_LipstickBerry, tunika, smiling; Miel (Caramel on, overalls) at the right edge at (198, 123) facing West; two tubes left at (195, 122) and (198, 122) (Rose, Forest); Stool, Plant_Daylily pot at (199, 124), Plant_YellowTallGrass at (193, 122).
 #        Instant: Nelim has just tried the next shade and glances at Miel. Says: Berry suits Nelim. Frame: tight, zoom 2.4 centred (196, 123); Nelim left of centre, Miel's shoulder foreground right, tubes foreground left; 10h light.
-#   4. vanity-4-cloister; cloister; 14h; zoom 3
+#   4. vanity-4-cloister; cloister; 14h; zoom 4.5
 #        Both standing under the torii side by side, facing South: Nelim at (177, 127) in Berry, Miel at (179, 127) in Caramel, same outfits as the morning, smiling; the wall lanterns of the cloister, TorchLamp lit at (176, 129), Plant_Daylily at (181, 127), Plant_YellowTallGrass at (175, 127).
-#        Instant: they have just set out for tea. Says: Two shades on the way to tea. Frame: medium, zoom 3 centred (178, 127); both faces in the upper third, torii behind, lantern and plants grouped at the right; 14h light. Bridge image between 10h and 18h.
+#        Instant: they have just set out for tea. Says: Two shades on the way to tea. Frame: medium, zoom 4.5 centred (178, 128), the validated frame of the place (torii in view; lips small, malus j assumed); both faces in the upper third, torii behind, lantern and plants grouped at the right; 14h light. Bridge image between 10h and 18h.
 #   5. vanity-5-forest; hut; 18h; zoom 2.4
 #        Miel at (141, 73) facing South in VanityCase_LipstickForest, cream UnderWhere_Chestwrap and green VAE_Apparel_Trousers, smiling; the andon lamp of the hut (native), DR_StickLantern lit at (140, 73), Stool at (143, 73), Plant_Daylily at (143, 74), Plant_YellowTallGrass at (139, 74).
 #        Instant: she has just changed for tea and chosen the last shade. Says: Miel chooses Forest. Frame: tight, zoom 2.4 centred (141, 73); head and shoulders against the wooden wall; warm lamp light at 18h.
@@ -321,7 +321,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (175, 127) fully grown
     And Nelim's Pickle Tools: "Nelim" stands at (177, 127) facing South
     And Nelim's Pickle Tools: "Miel" stands at (179, 127) facing South
-    And Nelim's Pickle Tools: I frame the cell (178, 127) at zoom 3
+    And Nelim's Pickle Tools: I frame the cell (178, 128) at zoom 4.5
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-4-cloister"
 
