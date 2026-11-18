@@ -19,19 +19,19 @@
 #        Instant: Nelim has just held out the first tube. Says: Four shades, one morning. Frame: wide-medium, zoom 3.2 centred (196, 123); row of four tubes in the foreground centre, the two women behind, lit torch left, plants right; low warm 8h light. Type: story scene. Known weakness (j): the lips are small at 268 px, malus assumed.
 #   2. vanity-2-caramel; terrace; 9h; zoom 2.6
 #        Miel at (197, 123) facing South wearing VanityCase_LipstickCaramel, overalls, smiling; Nelim at (195, 123) facing East at the left edge; three tubes left at (196, 122), (197, 122), (198, 122) (Rose, Berry, Forest); Stool, Plant_Daylily at (199, 124), SculptureSmall, TorchLamp lit at (194, 124).
-#        Instant: Miel has just put the colour on. Says: Miel tries Caramel. Frame: tight, zoom 2.6 centred (197, 123), Miel centred, head and shoulders; Nelim cropped at the left edge; tubes bottom; 9h light.
+#        Instant: Miel has just put the colour on. Says: Miel tries Caramel. Frame (2026-11-18, mouth step, root size 1, drop 0.24 from the calibration 04-mouth-calibration: lips 0.44 cell below the head position): Miel face and shoulders, lips about 10 px at 268 px; Nelim cropped at the left edge; tubes bottom; 9h light.
 #   3. vanity-3-berry; terrace; 10h; zoom 2.4
 #        Nelim at (196, 123) facing South wearing VanityCase_LipstickBerry, tunika, smiling; Miel (Caramel on, overalls) at the right edge at (198, 123) facing West; two tubes left at (195, 122) and (198, 122) (Rose, Forest); Stool, Plant_Daylily pot at (199, 124), Plant_YellowTallGrass at (193, 122).
-#        Instant: Nelim has just tried the next shade and glances at Miel. Says: Berry suits Nelim. Frame: tight, zoom 2.4 centred (196, 123); Nelim left of centre, Miel's shoulder foreground right, tubes foreground left; 10h light.
+#        Instant: Nelim has just tried the next shade and glances at Miel. Says: Berry suits Nelim. Frame (2026-11-18, mouth step, root size 1, drop 0.24): Nelim face and shoulders, Berry lips readable, tubes at the bottom edge; 10h light.
 #   4. vanity-4-cloister; cloister; 14h; zoom 4.5
 #        Both standing under the torii side by side, facing South: Nelim at (177, 127) in Berry, Miel at (179, 127) in Caramel, same outfits as the morning, smiling; the wall lanterns of the cloister, TorchLamp lit at (176, 129), Plant_Daylily at (181, 127), Plant_YellowTallGrass at (175, 127).
 #        Instant: they have just set out for tea. Says: Two shades on the way to tea. Frame: medium, zoom 4.5 centred (178, 128), the validated frame of the place (torii in view; lips small, malus j assumed); both faces in the upper third, torii behind, lantern and plants grouped at the right; 14h light. Bridge image between 10h and 18h.
 #   5. vanity-5-forest; hut; 18h; zoom 2.4
 #        Miel at (141, 73) facing South in VanityCase_LipstickForest, cream UnderWhere_Chestwrap and green VAE_Apparel_Trousers, smiling; the andon lamp of the hut (native), DR_StickLantern lit at (140, 73), Stool at (143, 73), Plant_Daylily at (143, 74), Plant_YellowTallGrass at (139, 74).
-#        Instant: she has just changed for tea and chosen the last shade. Says: Miel chooses Forest. Frame: tight, zoom 2.4 centred (141, 73); head and shoulders against the wooden wall; warm lamp light at 18h.
+#        Instant: she has just changed for tea and chosen the last shade. Says: Miel chooses Forest. Frame (2026-11-18, mouth step, root size 1, drop 0.24): Miel face and shoulders, green lips readable, wooden wall behind; warm lamp light at 18h.
 #   6. vanity-6-tea; hut; 19h; zoom 5
-#        Both standing at the low table facing South: Miel in Forest at (141, 73), Nelim in Berry at (142, 73), smiling; one leftover VanityCase_LipstickRose tube at (141, 74); the andon lamp, DR_StickLantern lit at (140, 73) and at (143, 73), Plant_Daylily at (143, 74); no TorchLamp indoors.
-#        Instant: the tea is poured, the day is done. Says: Four shades, three chosen. Frame: wide closing, zoom 5 centred (141, 73); the whole hut corner, both women in the middle, tube and lit lamps in the foreground, plants at the edges; dusk light from the lamps. Known weakness (j): lips small at 268 px, malus assumed.
+#        Both standing at the low table facing South: Miel in Forest at (141, 73), Nelim in Berry at (142, 73), smiling; one leftover VanityCase_LipstickRose tube at (141, 72); the andon lamp, DR_StickLantern lit at (140, 73) and at (143, 73), Plant_Daylily at (143, 74); no TorchLamp indoors.
+#        Instant: the tea is poured, the day is done. Says: Four shades, three chosen. Frame (2026-11-18, head step on both, root size 1.2): both faces with lips readable, tube south of Miel (141, 72) in the foreground, lit lamps and plant at the edges; dusk light from the lamps. Known weakness (j): lips small at 268 px, malus assumed.
 #   7. vanity-7-item-card; window-backdrop-for-height, centre (90, 140); 12h; interface window
 #        The info card of VanityCase_LipstickCaramel (Stats tab), cropped at the window, no subtitle, taken last. Decor: the item placed at (90, 140). Not scored.
 # Interface windows: shot 7 only (the mod has no settings page).
@@ -184,7 +184,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "SculptureSmall" near (198, 125)
     And Nelim's Pickle Tools: "Nelim" stands at (195, 123) facing East
     And Nelim's Pickle Tools: "Miel" stands at (197, 123) facing South
-    And Nelim's Pickle Tools: the camera frames the head of "Miel" at root size 2.6
+    And Nelim's Pickle Tools: the camera frames the mouth of "Miel" at root size 1 lowered by 0.24 cells
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-2-caramel"
 
@@ -255,7 +255,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "SculptureSmall" near (198, 125)
     And Nelim's Pickle Tools: "Nelim" stands at (196, 123) facing South
     And Nelim's Pickle Tools: "Miel" stands at (198, 123) facing West
-    And Nelim's Pickle Tools: the camera frames the head of "Nelim" at root size 2.4
+    And Nelim's Pickle Tools: the camera frames the mouth of "Nelim" at root size 1 lowered by 0.24 cells
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-3-berry"
 
@@ -371,7 +371,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (139, 74) fully grown
     And Nelim's Pickle Tools: I place the decor "Stool" near (143, 73)
     And Nelim's Pickle Tools: "Miel" stands at (141, 73) facing South
-    And Nelim's Pickle Tools: the camera frames the head of "Miel" at root size 2.4
+    And Nelim's Pickle Tools: the camera frames the mouth of "Miel" at root size 1 lowered by 0.24 cells
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-5-forest"
 
@@ -437,10 +437,10 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (139, 74) fully grown
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (143, 73)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (143, 73) is lit
-    And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (141, 74)
+    And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (141, 72)
     And Nelim's Pickle Tools: "Miel" stands at (141, 73) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (142, 73) facing South
-    And Nelim's Pickle Tools: I frame the cell (141, 73) at zoom 5
+    And Nelim's Pickle Tools: the camera frames the head of "Miel" and "Nelim" at root size 1.2
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-6-tea"
 
