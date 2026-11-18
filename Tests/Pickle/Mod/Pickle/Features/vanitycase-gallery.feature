@@ -19,16 +19,16 @@
 #        Instant: Nelim has just held out the first tube. Says: Four shades, one morning. Frame: wide-medium, zoom 3.2 centred (196, 123); row of four tubes in the foreground centre, the two women behind, lit torch left, plants right; low warm 8h light. Type: story scene. Known weakness (j): the lips are small at 268 px, malus assumed.
 #   2. vanity-2-caramel; terrace; 9h; zoom 2.6
 #        Miel at (197, 123) facing South wearing VanityCase_LipstickCaramel, overalls, smiling; Nelim at (195, 123) facing East at the left edge; three tubes left at (196, 122), (197, 122), (198, 122) (Rose, Berry, Forest); Stool, Plant_Daylily at (199, 124), SculptureSmall, TorchLamp lit at (194, 124).
-#        Instant: Miel has just put the colour on. Says: Miel tries Caramel. Frame (2026-11-18, mouth step, root size 1, drop 0.24 from the calibration 04-mouth-calibration: lips 0.44 cell below the head position): Miel face and shoulders, lips about 10 px at 268 px; Nelim cropped at the left edge; tubes bottom; 9h light.
+#        Instant: Miel has just put the colour on. Says: Miel tries Caramel. Frame (2026-11-18, mouth step, root size 1.2, drop 0.24; first try at root size 1 left only a bare brick wall, so a lit DR_StickLantern at (196, 123), Plant_Daylily at (198, 123), Plant_YellowTallGrass at (198, 124) now sit inside the frame): lips 0.44 cell below the head position): Miel face and shoulders, lips about 10 px at 268 px; Nelim cropped at the left edge; tubes bottom; 9h light.
 #   3. vanity-3-berry; terrace; 10h; zoom 2.4
 #        Nelim at (196, 123) facing South wearing VanityCase_LipstickBerry, tunika, smiling; Miel (Caramel on, overalls) at the right edge at (198, 123) facing West; two tubes left at (195, 122) and (198, 122) (Rose, Forest); Stool, Plant_Daylily pot at (199, 124), Plant_YellowTallGrass at (193, 122).
-#        Instant: Nelim has just tried the next shade and glances at Miel. Says: Berry suits Nelim. Frame (2026-11-18, mouth step, root size 1, drop 0.24): Nelim face and shoulders, Berry lips readable, tubes at the bottom edge; 10h light.
+#        Instant: Nelim has just tried the next shade and glances at Miel. Says: Berry suits Nelim. Frame (2026-11-18, mouth step, root size 1.2, drop 0.24; lit DR_StickLantern (195, 123), Plant_Daylily (194, 122), Plant_YellowTallGrass (194, 124) inside the frame against the brick wall): Nelim face and shoulders, Berry lips readable, tubes at the bottom edge; 10h light.
 #   4. vanity-4-cloister; cloister; 14h; zoom 4.5
 #        Both standing under the torii side by side, facing South: Nelim at (177, 127) in Berry, Miel at (179, 127) in Caramel, same outfits as the morning, smiling; the wall lanterns of the cloister, TorchLamp lit at (176, 129), Plant_Daylily at (181, 127), Plant_YellowTallGrass at (175, 127).
-#        Instant: they have just set out for tea. Says: Two shades on the way to tea. Frame: medium, zoom 4.5 centred (178, 128), the validated frame of the place (torii in view; lips small, malus j assumed); both faces in the upper third, torii behind, lantern and plants grouped at the right; 14h light. Bridge image between 10h and 18h.
+#        Instant: they have just set out for tea. Says: Two shades on the way to tea. Frame (2026-11-18 redo, head step on both, root size 1.3): both faces with Berry and Caramel lips readable, TorchLamp lit (176, 128), Plant_Daylily (180, 127), grass (175, 126) at the edges; 14h light. The wide frame hid the lips and was deleted. Bridge image between 10h and 18h.
 #   5. vanity-5-forest; hut; 18h; zoom 2.4
 #        Miel at (141, 73) facing South in VanityCase_LipstickForest, cream UnderWhere_Chestwrap and green VAE_Apparel_Trousers, smiling; the andon lamp of the hut (native), DR_StickLantern lit at (140, 73), Stool at (143, 73), Plant_Daylily at (143, 74), Plant_YellowTallGrass at (139, 74).
-#        Instant: she has just changed for tea and chosen the last shade. Says: Miel chooses Forest. Frame (2026-11-18, mouth step, root size 1, drop 0.24): Miel face and shoulders, green lips readable, wooden wall behind; warm lamp light at 18h.
+#        Instant: she has just changed for tea and chosen the last shade. Says: Miel chooses Forest. Frame (2026-11-18, mouth step, root size 1.2, drop 0.24; second lit DR_StickLantern (142, 73), Plant_Daylily (142, 74), grass (140, 74), Stool (140, 72) added so the centre is not bare wood): Miel face and shoulders, green lips readable, wooden wall behind; warm lamp light at 18h.
 #   6. vanity-6-tea; hut; 19h; zoom 5
 #        Both standing at the low table facing South: Miel in Forest at (141, 73), Nelim in Berry at (142, 73), smiling; one leftover VanityCase_LipstickRose tube at (141, 72); the andon lamp, DR_StickLantern lit at (140, 73) and at (143, 73), Plant_Daylily at (143, 74); no TorchLamp indoors.
 #        Instant: the tea is poured, the day is done. Says: Four shades, three chosen. Frame (2026-11-18, head step on both, root size 1.2): both faces with lips readable, tube south of Miel (141, 72) in the foreground, lit lamps and plant at the edges; dusk light from the lamps. Known weakness (j): lips small at 268 px, malus assumed.
@@ -176,15 +176,14 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (196, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickBerry" exactly at (197, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickForest" exactly at (198, 122)
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (196, 123)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (196, 123) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (198, 123) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (198, 124) fully grown
     And Nelim's Pickle Tools: I place the decor "Stool" near (199, 123)
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (194, 124)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (194, 124) is lit
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 124) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (193, 122) fully grown
-    And Nelim's Pickle Tools: I place the decor "SculptureSmall" near (198, 125)
     And Nelim's Pickle Tools: "Nelim" stands at (195, 123) facing East
     And Nelim's Pickle Tools: "Miel" stands at (197, 123) facing South
-    And Nelim's Pickle Tools: the camera frames the mouth of "Miel" at root size 1 lowered by 0.24 cells
+    And Nelim's Pickle Tools: the camera frames the mouth of "Miel" at root size 1.2 lowered by 0.24 cells
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-2-caramel"
 
@@ -247,15 +246,14 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: the area from (193, 118) to (200, 124) is emptied
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (195, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickForest" exactly at (198, 122)
-    And Nelim's Pickle Tools: I place the decor "Stool" near (199, 123)
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (194, 124)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (194, 124) is lit
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 124) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (193, 122) fully grown
-    And Nelim's Pickle Tools: I place the decor "SculptureSmall" near (198, 125)
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (195, 123)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (195, 123) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (194, 122) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (194, 124) fully grown
+    And Nelim's Pickle Tools: I place the decor "Stool" near (197, 122)
     And Nelim's Pickle Tools: "Nelim" stands at (196, 123) facing South
     And Nelim's Pickle Tools: "Miel" stands at (198, 123) facing West
-    And Nelim's Pickle Tools: the camera frames the mouth of "Nelim" at root size 1 lowered by 0.24 cells
+    And Nelim's Pickle Tools: the camera frames the mouth of "Nelim" at root size 1.2 lowered by 0.24 cells
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-3-berry"
 
@@ -315,13 +313,13 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
     And Nelim's Pickle Tools: "Miel" face is held neutral
     And Nelim's Pickle Tools: "Miel" facial expression is "normal"
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (176, 129)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (176, 129) is lit
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (181, 127) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (175, 127) fully grown
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (176, 128)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (176, 128) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (180, 127) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (175, 126) fully grown
     And Nelim's Pickle Tools: "Nelim" stands at (177, 127) facing South
     And Nelim's Pickle Tools: "Miel" stands at (179, 127) facing South
-    And Nelim's Pickle Tools: I frame the cell (178, 128) at zoom 4.5
+    And Nelim's Pickle Tools: the camera frames the head of "Nelim" and "Miel" at root size 1.3
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-4-cloister"
 
@@ -367,11 +365,13 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Miel" facial expression is "normal"
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (140, 73)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (140, 73) is lit
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (143, 74) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (139, 74) fully grown
-    And Nelim's Pickle Tools: I place the decor "Stool" near (143, 73)
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (142, 73)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (142, 73) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (142, 74) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (140, 74) fully grown
+    And Nelim's Pickle Tools: I place the decor "Stool" near (140, 72)
     And Nelim's Pickle Tools: "Miel" stands at (141, 73) facing South
-    And Nelim's Pickle Tools: the camera frames the mouth of "Miel" at root size 1 lowered by 0.24 cells
+    And Nelim's Pickle Tools: the camera frames the mouth of "Miel" at root size 1.2 lowered by 0.24 cells
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-5-forest"
 
