@@ -100,6 +100,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
     And Nelim's Pickle Tools: "Miel" face is held neutral
     And Nelim's Pickle Tools: "Miel" facial expression is "normal"
+    And Nelim's Pickle Tools: the area from (193, 118) to (200, 124) is emptied
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickCaramel" exactly at (195, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (196, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickBerry" exactly at (197, 122)
@@ -171,6 +172,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
     And Nelim's Pickle Tools: "Miel" face is held neutral
     And Nelim's Pickle Tools: "Miel" facial expression is "normal"
+    And Nelim's Pickle Tools: the area from (193, 118) to (200, 124) is emptied
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (196, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickBerry" exactly at (197, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickForest" exactly at (198, 122)
@@ -242,6 +244,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
     And Nelim's Pickle Tools: "Miel" face is held neutral
     And Nelim's Pickle Tools: "Miel" facial expression is "normal"
+    And Nelim's Pickle Tools: the area from (193, 118) to (200, 124) is emptied
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (195, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickForest" exactly at (198, 122)
     And Nelim's Pickle Tools: I place the decor "Stool" near (199, 123)
