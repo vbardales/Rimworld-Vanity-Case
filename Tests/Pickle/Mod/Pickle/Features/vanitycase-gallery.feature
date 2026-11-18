@@ -65,7 +65,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
     And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
-    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_PAESmallEarrings" made of "Gold"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_PAESmallEarrings" made of "Gold"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" brows are "BrowNormal"
@@ -104,13 +104,13 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (196, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickBerry" exactly at (197, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickForest" exactly at (198, 122)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (199, 123)
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (194, 124)
+    And Nelim's Pickle Tools: I place the decor "Stool" near (199, 123)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (194, 124)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (194, 124) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (199, 124)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" near (199, 124)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 124) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (193, 122) fully grown
-    And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (198, 125)
+    And Nelim's Pickle Tools: I place the decor "SculptureSmall" near (198, 125)
     And Nelim's Pickle Tools: "Nelim" stands at (195, 123) facing East
     And Nelim's Pickle Tools: "Miel" stands at (197, 123) facing South
     And Nelim's Pickle Tools: I frame the cell (196, 123) at zoom 3.2
@@ -136,7 +136,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
     And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
-    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_PAESmallEarrings" made of "Gold"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_PAESmallEarrings" made of "Gold"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" brows are "BrowNormal"
@@ -175,13 +175,13 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (196, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickBerry" exactly at (197, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickForest" exactly at (198, 122)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (199, 123)
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (194, 124)
+    And Nelim's Pickle Tools: I place the decor "Stool" near (199, 123)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (194, 124)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (194, 124) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (199, 124)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" near (199, 124)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 124) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (193, 122) fully grown
-    And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (198, 125)
+    And Nelim's Pickle Tools: I place the decor "SculptureSmall" near (198, 125)
     And Nelim's Pickle Tools: "Nelim" stands at (195, 123) facing East
     And Nelim's Pickle Tools: "Miel" stands at (197, 123) facing South
     And Nelim's Pickle Tools: the camera frames the head of "Miel" at root size 2.6
@@ -207,7 +207,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
     And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
-    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_PAESmallEarrings" made of "Gold"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_PAESmallEarrings" made of "Gold"
     And Nelim's Pickle Tools: "Nelim" also wears "VanityCase_LipstickBerry"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
@@ -246,13 +246,13 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Miel" facial expression is "normal"
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (195, 122)
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickForest" exactly at (198, 122)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (199, 123)
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (194, 124)
+    And Nelim's Pickle Tools: I place the decor "Stool" near (199, 123)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (194, 124)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (194, 124) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (199, 124)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" near (199, 124)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 124) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (193, 122) fully grown
-    And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (198, 125)
+    And Nelim's Pickle Tools: I place the decor "SculptureSmall" near (198, 125)
     And Nelim's Pickle Tools: "Nelim" stands at (196, 123) facing South
     And Nelim's Pickle Tools: "Miel" stands at (198, 123) facing West
     And Nelim's Pickle Tools: the camera frames the head of "Nelim" at root size 2.4
@@ -278,7 +278,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
     And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
-    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_PAESmallEarrings" made of "Gold"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_PAESmallEarrings" made of "Gold"
     And Nelim's Pickle Tools: "Nelim" also wears "VanityCase_LipstickBerry"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
@@ -315,9 +315,9 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
     And Nelim's Pickle Tools: "Miel" face is held neutral
     And Nelim's Pickle Tools: "Miel" facial expression is "normal"
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (176, 129)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (176, 129)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (176, 129) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (181, 127)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" near (181, 127)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (181, 127) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (175, 127) fully grown
     And Nelim's Pickle Tools: "Nelim" stands at (177, 127) facing South
@@ -366,12 +366,12 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
     And Nelim's Pickle Tools: "Miel" face is held neutral
     And Nelim's Pickle Tools: "Miel" facial expression is "normal"
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" at (139, 73)
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (139, 73)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (139, 73) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (143, 74)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" near (143, 74)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (143, 74) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (139, 74) fully grown
-    And Nelim's Pickle Tools: I place the decor "Stool" at (143, 73)
+    And Nelim's Pickle Tools: I place the decor "Stool" near (143, 73)
     And Nelim's Pickle Tools: "Miel" stands at (141, 73) facing South
     And Nelim's Pickle Tools: the camera frames the head of "Miel" at root size 2.4
     When Nelim's Pickle Tools: I let 5 frames pass
@@ -396,7 +396,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
     And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
-    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_PAESmallEarrings" made of "Gold"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_PAESmallEarrings" made of "Gold"
     And Nelim's Pickle Tools: "Nelim" also wears "VanityCase_LipstickBerry"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
@@ -433,12 +433,12 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
     And Nelim's Pickle Tools: "Miel" face is held neutral
     And Nelim's Pickle Tools: "Miel" facial expression is "normal"
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" at (139, 73)
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (139, 73)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (139, 73) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (143, 74)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" near (143, 74)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (143, 74) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (139, 74) fully grown
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" at (143, 73)
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (143, 73)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (143, 73) is lit
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickRose" exactly at (141, 74)
     And Nelim's Pickle Tools: "Miel" stands at (140, 73) facing South
@@ -452,7 +452,7 @@ Feature: Vanity Case gallery
     Given I set the hour to 12
     And Nelim's Sanctuary: I am at the sanctuary "window-backdrop-for-height"
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickCaramel" at (90, 140)
+    And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickCaramel" near (90, 140)
     And Nelim's Pickle Tools: I frame the cell (90, 140) at zoom 6
     When Nelim's Pickle Tools: I select the thing of def "VanityCase_LipstickCaramel" at (90, 140)
     And Nelim's Pickle Tools: I open the info card of the selected thing on the "Stats" tab
