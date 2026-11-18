@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Optional ingredients. The base recipe (cloth and a berry) needs no other mod. With the mods below installed,
+       the recipe uses their real ingredients: a lipstick is fat, wax and pigment. Nothing here is a dependency. -->
+
+  <!-- Apothecary (Continued), Mlie.Apothecary: tallow, the fat base of the first commercial lipsticks. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Apothecary (Continued)</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[starts-with(defName, "VanityCase_Lipstick")]/costList</xpath>
+      <value>
+        <AYTallow>1</AYTallow>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- EM Tattoos and Piercings: a pigment of the shade replaces the berry. Rose has no pink pigment, it takes red. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>EM Tattoos and Piercings</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VanityCase_LipstickCaramel"]/costList/RawBerries</xpath>
+          <value>
+            <EMPigmentOrange>1</EMPigmentOrange>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VanityCase_LipstickRose"]/costList/RawBerries</xpath>
+          <value>
+            <EMPigmentRed>1</EMPigmentRed>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VanityCase_LipstickBerry"]/costList/RawBerries</xpath>
+          <value>
+            <EMPigmentPurple>1</EMPigmentPurple>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VanityCase_LipstickForest"]/costList/RawBerries</xpath>
+          <value>
+            <EMPigmentGreen>1</EMPigmentGreen>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

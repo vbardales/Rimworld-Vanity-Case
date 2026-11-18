@@ -44,9 +44,6 @@
       <WorkToMake>300</WorkToMake>
       <EquipDelay>1</EquipDelay>
     </statBases>
-    <costList>
-      <Cloth>1</Cloth>
-    </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
@@ -86,6 +83,10 @@
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.769, 0.463, 0.337)</color>
     </colorGenerator>
+    <costList>
+      <Cloth>1</Cloth>
+      <RawBerries>1</RawBerries>
+    </costList>
   </ThingDef>
 
   <ThingDef ParentName="VanityCase_LipstickBase">
@@ -95,6 +96,10 @@
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.729, 0.322, 0.471)</color>
     </colorGenerator>
+    <costList>
+      <Cloth>1</Cloth>
+      <RawBerries>1</RawBerries>
+    </costList>
   </ThingDef>
 
   <ThingDef ParentName="VanityCase_LipstickBase">
@@ -104,6 +109,10 @@
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.502, 0.125, 0.251)</color>
     </colorGenerator>
+    <costList>
+      <Cloth>1</Cloth>
+      <RawBerries>1</RawBerries>
+    </costList>
   </ThingDef>
 
   <ThingDef ParentName="VanityCase_LipstickBase">
@@ -113,6 +122,10 @@
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.133, 0.431, 0.259)</color>
     </colorGenerator>
+    <costList>
+      <Cloth>1</Cloth>
+      <RawBerries>1</RawBerries>
+    </costList>
   </ThingDef>
 
 </Defs>
