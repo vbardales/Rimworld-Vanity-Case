@@ -10,13 +10,13 @@ Feature: Vanity Case recipe patches
     And game speed is paused
 
   Scenario: recipe-apothecary-tallow
-    Then Nelim's Pickle Tools: def "VanityCase_LipstickCaramel" of type "ThingDef" has "AYTallow" in the list "costList"
-    And Nelim's Pickle Tools: def "VanityCase_LipstickRose" of type "ThingDef" has "AYTallow" in the list "costList"
-    And Nelim's Pickle Tools: def "VanityCase_LipstickBerry" of type "ThingDef" has "AYTallow" in the list "costList"
-    And Nelim's Pickle Tools: def "VanityCase_LipstickForest" of type "ThingDef" has "AYTallow" in the list "costList"
+    Then Nelim's Pickle Tools: the def "VanityCase_LipstickCaramel" of type "ThingDef" has "(1x AYTallow)" in the list "costList"
+    And Nelim's Pickle Tools: the def "VanityCase_LipstickRose" of type "ThingDef" has "(1x AYTallow)" in the list "costList"
+    And Nelim's Pickle Tools: the def "VanityCase_LipstickBerry" of type "ThingDef" has "(1x AYTallow)" in the list "costList"
+    And Nelim's Pickle Tools: the def "VanityCase_LipstickForest" of type "ThingDef" has "(1x AYTallow)" in the list "costList"
 
   Scenario: recipe-em-pigments
-    Then Nelim's Pickle Tools: def "VanityCase_LipstickCaramel" of type "ThingDef" has "EMPigmentOrange" in the list "costList"
-    And Nelim's Pickle Tools: def "VanityCase_LipstickRose" of type "ThingDef" has "EMPigmentRed" in the list "costList"
-    And Nelim's Pickle Tools: def "VanityCase_LipstickBerry" of type "ThingDef" has "EMPigmentPurple" in the list "costList"
-    And Nelim's Pickle Tools: def "VanityCase_LipstickForest" of type "ThingDef" has "EMPigmentGreen" in the list "costList"
+    Then Nelim's Pickle Tools: the def "VanityCase_LipstickCaramel" of type "ThingDef" has "(1x EMPigmentOrange)" in the list "costList"
+    And Nelim's Pickle Tools: the def "VanityCase_LipstickRose" of type "ThingDef" has "(1x EMPigmentRed)" in the list "costList"
+    And Nelim's Pickle Tools: the def "VanityCase_LipstickBerry" of type "ThingDef" has "(1x EMPigmentPurple)" in the list "costList"
+    And Nelim's Pickle Tools: the def "VanityCase_LipstickForest" of type "ThingDef" has "(1x EMPigmentGreen)" in the list "costList"
