@@ -109,7 +109,8 @@ Virginie's French review (6.g): validated by Virginie on 2026-11-17, revision 41
 
 Synced 2026-11-17 (sync-nsb-npt, NSB docs read by a read-only sub-agent, NPT steps read). Rules said back: everything in NSB is free; a colonist or domestic animal outside NSB, and any change to a colonist property (mouth included), need Virginie's express validation; every outfit is free; every animal the mod includes must be shown (the mod includes none). Nothing in NSB moved since the lipstick tests: Miel's lipstick Caramel was set by the owner on 2026-11-17 (VALIDE.md). Shotlist written 2026-11-17 (see "Shotlist"): Nelim and Miel only, no colonist outside NSB, no property changed (Nelim keeps her canon MouthLipsSmirk). NPT: no new step or catalogue entry changes the plan (mouth, portrait and dyed-wear steps already used).
 
-Places read: 2026-11-17 Tribe read: 2026-11-17 Steps read: 2026-11-19
+Places read: 2026-11-17 Tribe read: 2026-11-17 Steps read: 2026-11-20
+Check 2026-11-20 (sync-nsb-npt at writeTests, nothing written to the shotlist): NSB docs since 2026-11-17 moved only for other colonists (Iori, Celeste, Quill, Quo, Quaren, Daichi, Dalia), the sex-stable tests, WDI bodies, status-journal cleanup and a plan to rebuild the save as Nelims-tribe-v2 (same site names, centres and zooms by design, `SanctuarySites` table of `Source/SanctuarySteps.cs` is the authority). Nothing touches terrace, cloister, hut, Miel or Nelim. NPT steps and catalogues: no commit since 2026-11-19. Rules said back: everything in NSB free; colonist or domestic animal outside NSB and any change to a colonist property need Virginie validation; outfits free; every included animal shown (mod includes none). No owner question. Risk to watch: if the Nelims-tribe-v2 save replaces the fixture, the cells and decor of our three places are read again before the next gallery ticket.
 
 | Place | Shots | Changes for the gallery | Last read |
 | --- | --- | --- | --- |
