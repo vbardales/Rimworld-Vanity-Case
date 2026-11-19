@@ -18,6 +18,7 @@ workshop_required_items: n/a, not released yet   # owner 2026-11-10 (AUDIT 4.g):
 workshop: none
 published: no
 tested_on: 2026-11-17 pickle 8064cbb (1.6)
+ecosystem_line: "1.0"         # 2026-11-19: PiI search done 2026-11-17 (AUDIT 2.h); no source mod, no original translations
 tested_1_7: no
 code_review_sha: 6e27ca89118781c8168d9923f64c58d4e98d0b6b
 remaining:
@@ -52,7 +53,7 @@ remaining:
   - "2026-11-06: unverified: lip colours (implemented, 3.a closed), approach in Docs/DESIGN-LIP-COLOURS.md (recolour installed VTE lip textures in memory on demand, Harmony postfix on Facial Animation's MouthControllerComp.LoadTextures, nothing shipped). Virginie: any colour per pawn (example forest green #226E42 to match Miel's underwear, test copy NsbMouthLipsBigForest in NsbFaceFit), ideally per outfit or occasion. Caramel, Rose, Berry are presets only. Virginie 2026-11-06 (final): the lip colour follows the lipstick worn: lipstick = colourable apparel with no worn graphic on its own layer; outfits and occasions go through the apparel policy, matching an outfit is a dye. One lipstick def per shade family (Virginie 2026-11-06), so each occasion's apparel policy picks the shade; first shades Caramel, Rose, Berry, Forest #226E42, list to settle. Open: dye needs Ideology, mouth body part group, recipe and cost."
   - "2026-11-06: 1.a done: duplicate search (Search-Workshop.sh, pattern lipstick or makeup, run makeup-dup): no mod recolours Facial Animation lips. Makeup Mod (BigOlBullseye.MakeupMod, 3810397741) is a craftable beauty item with no visual; Roo's Tattoos and Roo's Birthmarks and Blemishes are skin marks, not lips."
 updated: 2026-11-17
-protocols_read_sha: b6dffae1771d4293af91253cfa700331460b42af
+protocols_read_sha: 84dea0af08439d7fc0959374278d5d35f691a26f
 ---
 
 # Vanity Case: status
