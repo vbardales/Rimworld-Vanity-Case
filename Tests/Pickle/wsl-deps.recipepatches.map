@@ -1,0 +1,12 @@
+# Pass "recipepatches": the lipstick pass plus the two optional mods the recipe patches target (Apothecary Continued 2195469123, EM Tattoos and Piercings Continued 2030227116). The hard dependencies of those two mods are NOT yet known: add them from the first run failure.
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
+nelim.pickletools.coatsteps path:PickleTools/CoatSteps/Mod
+Nals.FacialAnimation 1635901197
+VanillaExpanded.VTEXE.FacialAnims 2816938779
+nelim.pickletools.inspecttabs path:PickleTools/InspectTabs/Mod
+nelim.pickletools.stagedecor path:PickleTools/StageDecor/Mod
+nelim.pickletools.deffields path:PickleTools/DefFieldSteps/Mod
+Mlie.Apothecary 2195469123
+Mlie.EMTattoosAndPiercings 2030227116
