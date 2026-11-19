@@ -101,7 +101,7 @@ Virginie's French review (6.g): validated by Virginie on 2026-11-17, revision 41
 
 Synced 2026-11-17 (sync-nsb-npt, NSB docs read by a read-only sub-agent, NPT steps read). Rules said back: everything in NSB is free; a colonist or domestic animal outside NSB, and any change to a colonist property (mouth included), need Virginie's express validation; every outfit is free; every animal the mod includes must be shown (the mod includes none). Nothing in NSB moved since the lipstick tests: Miel's lipstick Caramel was set by the owner on 2026-11-17 (VALIDE.md). Shotlist written 2026-11-17 (see "Shotlist"): Nelim and Miel only, no colonist outside NSB, no property changed (Nelim keeps her canon MouthLipsSmirk). NPT: no new step or catalogue entry changes the plan (mouth, portrait and dyed-wear steps already used).
 
-Places read: 2026-11-17 Tribe read: 2026-11-17 Steps read: 2026-11-18
+Places read: 2026-11-17 Tribe read: 2026-11-17 Steps read: 2026-11-19
 
 | Place | Shots | Changes for the gallery | Last read |
 | --- | --- | --- | --- |
