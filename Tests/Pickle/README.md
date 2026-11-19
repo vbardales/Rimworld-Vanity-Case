@@ -4,7 +4,7 @@ Played inside a running RimWorld by [Pickle](https://github.com/RimWorks/Rimworl
 
 | Feature | Pass | Checks |
 | --- | --- | --- |
-| `06-recipe-patches` | `wsl-deps.recipepatches.map` | Two scenarios: with Apothecary (Continued) each lipstick has `AYTallow` in its `costList`; with EM Tattoos and Piercings (Continued) the berry is replaced by the pigment of the shade. Written 2026-11-20, not yet run; the EM mod dependencies are not in the map yet. |
+| `06-recipe-patches` | `wsl-deps.recipepatches.map` | Two scenarios: with Apothecary (Continued) each lipstick has `AYTallow` in its `costList`; with EM Tattoos and Piercings (Continued) the berry is replaced by the pigment of the shade. Written 2026-11-20, not yet run;. |
 | `05-recipe-base` | `wsl-deps.lipstick.map` | Base recipe: each lipstick holds `RawBerries` in `costList`. Written 2026-11-20, not yet run. |
 | `03-remove-dye` | `wsl-deps.lipstick.map` | Caramel worn then removed (red lips return), Caramel dyed berry. Written 2026-11-17, not yet run. |
 | `02-french` | `wsl-deps.lipstick.map` | Run with -Language French: exact French label and description of the 4 lipsticks, no mod options page, info card of Caramel (capture to read by eye). Written 2026-11-17 on PiT advice, not yet run. |
