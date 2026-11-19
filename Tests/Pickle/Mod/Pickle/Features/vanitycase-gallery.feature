@@ -183,7 +183,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "Stool" near (199, 123)
     And Nelim's Pickle Tools: "Nelim" stands at (195, 123) facing East
     And Nelim's Pickle Tools: "Miel" stands at (197, 123) facing South
-    And Nelim's Pickle Tools: the camera frames the mouth of "Miel" at root size 0.7 lowered by 0.24 cells
+    And Nelim's Pickle Tools: the camera frames the mouth of "Miel" at root size 0.55 lowered by 0.24 cells
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-2-caramel"
 
@@ -248,8 +248,10 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickForest" exactly at (198, 122)
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (195, 123)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (195, 123) is lit
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (194, 122) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (194, 124) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (197, 124) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (195, 124) fully grown
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (197, 123)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (197, 123) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" near (197, 122)
     And Nelim's Pickle Tools: "Nelim" stands at (196, 123) facing South
     And Nelim's Pickle Tools: "Miel" stands at (198, 123) facing West
@@ -313,10 +315,10 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Miel" eyeballs are "Empathetic"
     And Nelim's Pickle Tools: "Miel" face is held neutral
     And Nelim's Pickle Tools: "Miel" facial expression is "normal"
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (176, 128)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (176, 128) is lit
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (180, 127) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (175, 126) fully grown
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (178, 127)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (178, 127) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (179, 126) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (177, 126) fully grown
     And Nelim's Pickle Tools: "Nelim" stands at (177, 127) facing South
     And Nelim's Pickle Tools: "Miel" stands at (179, 127) facing South
     And Nelim's Pickle Tools: the camera frames the head of "Nelim" and "Miel" at root size 0.9
