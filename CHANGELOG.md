@@ -12,3 +12,4 @@ This file serves the repository and the writing of Steam patch notes; RimWorld d
 - `LipSourceDef` names the mouths whose lips are painted red (the Vanilla Textures Expanded lip mouths). Nothing from another mod is copied: the recolour is made in memory from the installed textures.
 - Lipstick only recolours Facial Animation mouth graphics, never eyes: the Harmony postfix body is shared by every graphic collection with a reference type, so it checks that the collection is a mouth one.
 - Lip recolour keeps the shading of the original lips and leaves teeth and outline unchanged (`Tests/Recolour`).
+- Optional recipe ingredients, no dependency: with Apothecary (Continued) a lipstick also costs tallow; with EM Tattoos and Piercings (Continued) the berry is replaced by a pigment of the shade (`Mod/Patches/LipstickIngredients.xml`, `PatchOperationFindMod`, declared in `Mod/About/OptionalCompat.xml`).

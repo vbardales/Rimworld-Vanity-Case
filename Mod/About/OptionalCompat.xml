@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OptionalCompat>
+  <li>
+    <packageId>Mlie.Apothecary</packageId>
+    <workshopId>2195469123</workshopId>
+    <kind>patch</kind>
+  </li>
+  <li>
+    <packageId>Mlie.EMTattoosAndPiercings</packageId>
+    <workshopId>2030227116</workshopId>
+    <kind>patch</kind>
+  </li>
+</OptionalCompat>

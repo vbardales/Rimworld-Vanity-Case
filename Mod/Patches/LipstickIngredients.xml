@@ -21,6 +21,7 @@
   <Operation Class="PatchOperationFindMod">
     <mods>
       <li>EM Tattoos and Piercings</li>
+      <li>EM Tattoos and Piercings (Continued)</li>
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
