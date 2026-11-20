@@ -5,7 +5,7 @@ repo: Rimworld-Vanity-Case
 remote: https://github.com/vbardales/Rimworld-Vanity-Case.git
 visibility: public             # original creation, nothing taken from another mod (PUBLISHING.md, "Nommage"); the GitHub repository is not created yet
 detached: yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence: original
 licence_at: "2026-11-06: original work, MIT (LICENSE and Mod/LICENSE). No third-party file: Facial Animation (Nals) is a dependency, Vanilla Textures Expanded - Facial Animation lips are recoloured in memory at run time, never copied (Docs/DESIGN-LIP-COLOURS.md)."
 upstream_mod_remotes: N/A      # no source mod: Facial Animation and VTE - Facial Animation are a dependency and an optional input, none of their files is used
@@ -22,6 +22,7 @@ ecosystem_line: "1.0"         # 2026-11-19: PiI search done 2026-11-17 (AUDIT 2.
 tested_1_7: no
 code_review_sha: 6e27ca89118781c8168d9923f64c58d4e98d0b6b
 remaining:
+ - "2026-11-20 REPLAY writeTests.. (ledger .replays/VanityCase-20261120-writeTests-end.tsv, 24 rows, Check-Replay OK, typed by Virginie): 7.a to 8.h fulfilled, stage playTests[1.0.0]. Open: 8.i [ticket to file: English item card capture, Player.log], 8.l (tested_on still 8064cbb, set to the green runs on 0ce786e; Docs/runs/pickle.md missing, one line per run), 8.m (code review 6e27ca8..HEAD: Mod/Defs/Lipstick.xml, Mod/Patches/LipstickIngredients.xml, Lipstick.png, OptionalCompat.xml; not text only), then 8.n, replay, 9.*. Defect: Check-Steps INFO, 04-mouth-calibration and vanitycase-gallery features lack @requires:nelim.pickletools.clickdiagnostics (gallery map mounts it). Fix in place done: Docs/review-refusals.md."
  - "2026-11-20 8.a, 8.c, 8.g GREEN at 0ce786e: ticket fb70 English suites 8/8 (01-lipstick 6 + 03-remove-dye 2, map lipstick), exit 0, junit failures 0. Portraits opened: none-keeps-red dark red lips, caramel coral, forest green, eyes unchanged. Player.log: only the Pickle-tests companion lines (downloadUrl, no content). Evidence Tests/Pickle/Evidence/lipstick (summary.json, junit.xml, git-ignored, replaces lipstick-17), Inbox run deleted. Ticket 0547 French GREEN 3/3 on 0ce786e (french-def-text, french-no-settings-page, french-item-card-caramel), exit 0, junit failures 0; card capture opened: title Rouge à lèvres caramel, French description, layer Lèvres, ingredients 1x tissu, 1x baie, source Vanity Case; Player.log only the Pickle-tests companion line. Evidence Tests/Pickle/Evidence/french-review (replaces the 2026-11-17 one), Inbox emptied. All tickets of this round green. Next: 7.h (Tests/Pickle/README.md run state), 7.i, 8.l to 8.n, replay."
  - "2026-11-20 8.f GREEN (second half): ticket 820e recipe base 1/1 (recipe-base-berry, set lipstick, staged tree fce69e1): the item text format '(1x RawBerries)' is proven by the passing step, Player.log has only the Pickle-tests companion 'did not load any content' line. Evidence Tests/Pickle/Evidence/recipe-base (summary.json, junit.xml, git-ignored), Inbox emptied. 8.f closed (base 820e, patches 94df). Next: lipstick suites 8.a, 8.c, 8.g refiled at HEAD, then 7.h, 7.i, 8.l to 8.n, replay."
  - "2026-11-20 protocols read to 2c213d65 (resume): no protocol file changed since 7b31b6fe that this stage uses; Check-Status 0 error."
@@ -66,7 +67,7 @@ remaining:
   - "2026-11-06: unverified: lip colours (implemented, 3.a closed), approach in Docs/DESIGN-LIP-COLOURS.md (recolour installed VTE lip textures in memory on demand, Harmony postfix on Facial Animation's MouthControllerComp.LoadTextures, nothing shipped). Virginie: any colour per pawn (example forest green #226E42 to match Miel's underwear, test copy NsbMouthLipsBigForest in NsbFaceFit), ideally per outfit or occasion. Caramel, Rose, Berry are presets only. Virginie 2026-11-06 (final): the lip colour follows the lipstick worn: lipstick = colourable apparel with no worn graphic on its own layer; outfits and occasions go through the apparel policy, matching an outfit is a dye. One lipstick def per shade family (Virginie 2026-11-06), so each occasion's apparel policy picks the shade; first shades Caramel, Rose, Berry, Forest #226E42, list to settle. Open: dye needs Ideology, mouth body part group, recipe and cost."
   - "2026-11-06: 1.a done: duplicate search (Search-Workshop.sh, pattern lipstick or makeup, run makeup-dup): no mod recolours Facial Animation lips. Makeup Mod (BigOlBullseye.MakeupMod, 3810397741) is a craftable beauty item with no visual; Roo's Tattoos and Roo's Birthmarks and Blemishes are skin marks, not lips."
 updated: 2026-11-20
-protocols_read_sha: 9f4de5ad0d7160029a489141367e2c925b344cb7
+protocols_read_sha: dccf25252e47926b92db63f2397b17567151c0d7
 ---
 
 # Vanity Case: status
