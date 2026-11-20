@@ -22,6 +22,7 @@ ecosystem_line: "1.0"         # 2026-11-19: PiI search done 2026-11-17 (AUDIT 2.
 tested_1_7: no
 code_review_sha: 6e27ca89118781c8168d9923f64c58d4e98d0b6b
 remaining:
+ - "2026-11-20 TICKETS filed on 0ce786e (8.a, 8.c, 8.g refile after the recipe change): fb70 English suites (01-lipstick 6 scenarios + 03-remove-dye 2, map lipstick, evidence Tests/Pickle/Inbox/lipstick-0ce786e), 0547 French (02-french 3 scenarios, evidence Inbox/french-0ce786e). Waiting on the TM. Then 7.h, 7.i, 8.l to 8.n, replay."
  - "2026-11-20 8.f GREEN (second half): ticket 820e recipe base 1/1 (recipe-base-berry, set lipstick, staged tree fce69e1): the item text format '(1x RawBerries)' is proven by the passing step, Player.log has only the Pickle-tests companion 'did not load any content' line. Evidence Tests/Pickle/Evidence/recipe-base (summary.json, junit.xml, git-ignored), Inbox emptied. 8.f closed (base 820e, patches 94df). Next: lipstick suites 8.a, 8.c, 8.g refiled at HEAD, then 7.h, 7.i, 8.l to 8.n, replay."
  - "2026-11-20 protocols read to 2c213d65 (resume): no protocol file changed since 7b31b6fe that this stage uses; Check-Status 0 error."
  - "2026-11-20 protocols read to 7b31b6fe: AUDIT 9.f now needs Virginie's explicit oui on the whole gallery in chat before mountPreview, then gallery_validated_sha (scripts/Get-GalleryHash.ps1) in STATUS.md; GALLERY-PROPS credit: ATTRIBUTION.md 'Gallery set' always, checked at the stage passage. Both apply at shootGallery end, not now."
