@@ -25,14 +25,14 @@
 #        Nelim at (196, 123) facing South wearing VanityCase_LipstickBerry, tunika, smiling; Miel (Caramel on, overalls) at the right edge at (198, 123) facing West; two tubes left at (195, 122) and (198, 122) (Rose, Forest); Stool near (197, 122), lit DR_StickLantern near (195, 123) and near (197, 123), Plant_Daylily at (197, 124), Plant_YellowTallGrass at (195, 124).
 #        Instant: Nelim has just tried the next shade and glances at Miel. Says: Berry suits Nelim. Frame (2026-11-19 redo, lips too small at root size 1.2: mouth step, root size 0.7, drop 0.24; lit DR_StickLantern (195, 123) and (197, 123), Plant_Daylily (197, 124), Plant_YellowTallGrass (195, 124) inside the frame against the brick wall): Nelim face and shoulders, Berry lips readable, tubes at the bottom edge; 10h light. Gesture (2026-11-20): Nelim holds the VanityCase_LipstickBerry tube in hand and faces the cell (195, 122) toward the tubes; close lips: root size 0.28 lowered by 0.44 cells.
 #   4. vanity-4-cloister; cloister; 14h; zoom 4.5
-#        Both standing under the torii side by side, facing South: Nelim at (177, 127) in Berry, Miel at (179, 127) in Caramel, same outfits as the morning, smiling; the wall lanterns of the cloister (native), TorchLamp lit near (178, 127), Plant_Daylily at (179, 126), Plant_YellowTallGrass at (177, 126).
-#        Instant: they have just set out for tea. Says: Two shades on the way to tea. Frame (2026-11-19 redo, lips too small at root size 1.3: head step on both, root size 0.9): both faces with Berry and Caramel lips readable, TorchLamp lit (178, 127), Plant_Daylily (179, 126), grass (177, 126) at the edges; 14h light. The wide frame hid the lips and was deleted. Bridge image between 10h and 18h. Gesture (2026-11-20): caught mid-walk, Nelim forced to walk to (177, 130) and Miel to (179, 130), game advanced by exactly 20 ticks then paused. Known weakness (j): two faces need a wide frame, lips about 12 px at 268 px, malus assumed.
+#        Nelim alone in the frame, mid-walk under the torii in Berry, smiling (Miel walks beside her out of frame in Caramel, same outfits as the morning): Nelim at (177, 127) facing South forced to walk to (177, 130), Miel at (179, 127) forced to walk to (179, 130), the wall lanterns of the cloister (native), TorchLamp lit near (178, 127), Plant_Daylily at (179, 126), Plant_YellowTallGrass at (177, 126).
+#        Instant: she has just set out for tea. Says: Berry goes out to tea. Frame (2026-11-20 recomposed by the director for j: two faces made the lips about 12 px at 268 px, so one mouth): the camera frames the mouth of Nelim at root size 0.28 lowered by 0.44 cells, lips about 25 px at 268 px, torii and lantern light soft behind; 14h light. Gesture: caught mid-walk, game advanced by exactly 20 ticks then paused. Bridge image between 10h and 18h.
 #   5. vanity-5-forest; hut; 18h; zoom 2.4
 #        Miel at (141, 73) facing South in VanityCase_LipstickForest, cream UnderWhere_Chestwrap and green VAE_Apparel_Trousers, smiling; the andon lamp of the hut (native), DR_StickLantern lit near (140, 73) and near (142, 73), Stool near (140, 72), Plant_Daylily at (142, 74), Plant_YellowTallGrass at (140, 74).
 #        Instant: she has just changed for tea and chosen the last shade. Says: Miel chooses Forest. Frame (2026-11-19 redo, green lips a speck at 268 px: mouth step, root size 0.7, drop 0.24; second lit DR_StickLantern (142, 73), Plant_Daylily (142, 74), grass (140, 74), Stool (140, 72) added so the centre is not bare wood): Miel face and shoulders, green lips readable, wooden wall behind; warm lamp light at 18h. Gesture (2026-11-20): Miel holds the VanityCase_LipstickForest tube in hand (the last shade chosen); close lips: root size 0.28 lowered by 0.44 cells.
 #   6. vanity-6-tea; hut; 19h; zoom 5
-#        Both standing at the low table facing South: Miel in Forest at (141, 73), Nelim in Berry at (142, 73), smiling; one leftover VanityCase_LipstickRose tube, held in Nelim hand (no longer on the table); the andon lamp, DR_StickLantern lit at (140, 73) and at (143, 73), Plant_Daylily at (143, 74); no TorchLamp indoors.
-#        Instant: the tea is poured, the day is done. Says: Four shades, three chosen. Frame (2026-11-18, head step on both, root size 1.2): both faces with lips readable, Rose tube in Nelim hand, lit lamps and plant at the edges; dusk light from the lamps. Known weakness (j): lips small at 268 px, malus assumed. Gesture (2026-11-20): Nelim holds the leftover VanityCase_LipstickRose tube in hand (moved from the table) and faces the cell (141, 73), Miel faces the cell (142, 73): the two women face each other. Known weakness (j): two faces in a wide closing frame, malus assumed.
+#        Both standing at the low table facing each other: Miel in Forest at (141, 73), Nelim in Berry at (142, 73), smiling; three tubes on the table at (140, 72), (141, 72), (142, 72): VanityCase_LipstickCaramel, VanityCase_LipstickBerry, VanityCase_LipstickForest; Nelim holds the fourth, VanityCase_LipstickRose, in hand; the andon lamp, DR_StickLantern lit at (140, 73) and at (143, 73), Plant_Daylily at (143, 74); no TorchLamp indoors.
+#        Instant: the tea is poured, the day is done. Says: Four shades, three chosen. Frame (2026-11-20 recomposed for j: the wide closing now shows the four tubes of the day like the opening): I frame the cells (139, 71) to (144, 75) filling 100 percent of the screen, both women full length, the row of tubes in the foreground (about 29 px each at 268 px), lit lamps and plant at the edges; dusk light from the lamps. Gesture: Nelim holds the Rose tube in hand and faces the cell (141, 73), Miel faces the cell (142, 73): the two women face each other.
 #   7. vanity-7-item-card; window-backdrop-for-height, centre (90, 140); 12h; interface window
 #        The info card of VanityCase_LipstickCaramel (Stats tab), cropped at the window, no subtitle, taken last. Decor: the item placed at (90, 140). Not scored.
 # Interface windows: shot 7 only (the mod has no settings page).
@@ -332,7 +332,7 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (177, 130)
     And Nelim's Pickle Tools: "Miel" is forced to walk to (179, 130)
     And Nelim's Pickle Tools: I advance the paused game by exactly 20 ticks
-    And Nelim's Pickle Tools: the camera frames the head of "Nelim" and "Miel" at root size 0.9
+    And Nelim's Pickle Tools: the camera frames the mouth of "Nelim" at root size 0.28 lowered by 0.44 cells
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-4-cloister"
 
@@ -453,10 +453,13 @@ Feature: Vanity Case gallery
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (143, 73) is lit
     And Nelim's Pickle Tools: "Miel" stands at (141, 73) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (142, 73) facing South
+    And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickCaramel" exactly at (140, 72)
+    And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickBerry" exactly at (141, 72)
+    And Nelim's Pickle Tools: I place the decor "VanityCase_LipstickForest" exactly at (142, 72)
     And Nelim's Pickle Tools: the colonist "Nelim" holds "VanityCase_LipstickRose" in hand
     And Nelim's Pickle Tools: "Nelim" faces the cell (141, 73)
     And Nelim's Pickle Tools: "Miel" faces the cell (142, 73)
-    And Nelim's Pickle Tools: the camera frames the head of "Miel" and "Nelim" at root size 1.2
+    And Nelim's Pickle Tools: I frame the cells (139, 71) to (144, 75) filling 100 percent of the screen
     When Nelim's Pickle Tools: I let 5 frames pass
     Then I take a screenshot "vanity-6-tea"
 
