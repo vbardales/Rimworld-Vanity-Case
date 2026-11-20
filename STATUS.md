@@ -22,7 +22,7 @@ ecosystem_line: "1.0"         # 2026-11-19: PiI search done 2026-11-17 (AUDIT 2.
 tested_1_7: no
 code_review_sha: 6e27ca89118781c8168d9923f64c58d4e98d0b6b
 remaining:
- - "2026-11-20 TICKETS filed on 0ce786e (8.a, 8.c, 8.g refile after the recipe change): fb70 English suites (01-lipstick 6 scenarios + 03-remove-dye 2, map lipstick, evidence Tests/Pickle/Inbox/lipstick-0ce786e), 0547 French (02-french 3 scenarios, evidence Inbox/french-0ce786e). Waiting on the TM. Then 7.h, 7.i, 8.l to 8.n, replay."
+ - "2026-11-20 8.a, 8.c, 8.g GREEN at 0ce786e: ticket fb70 English suites 8/8 (01-lipstick 6 + 03-remove-dye 2, map lipstick), exit 0, junit failures 0. Portraits opened: none-keeps-red dark red lips, caramel coral, forest green, eyes unchanged. Player.log: only the Pickle-tests companion lines (downloadUrl, no content). Evidence Tests/Pickle/Evidence/lipstick (summary.json, junit.xml, git-ignored, replaces lipstick-17), Inbox run deleted. Waiting on ticket 0547 French (02-french 3 scenarios, evidence Inbox/french-0ce786e). Then 7.h, 7.i, 8.l to 8.n, replay."
  - "2026-11-20 8.f GREEN (second half): ticket 820e recipe base 1/1 (recipe-base-berry, set lipstick, staged tree fce69e1): the item text format '(1x RawBerries)' is proven by the passing step, Player.log has only the Pickle-tests companion 'did not load any content' line. Evidence Tests/Pickle/Evidence/recipe-base (summary.json, junit.xml, git-ignored), Inbox emptied. 8.f closed (base 820e, patches 94df). Next: lipstick suites 8.a, 8.c, 8.g refiled at HEAD, then 7.h, 7.i, 8.l to 8.n, replay."
  - "2026-11-20 protocols read to 2c213d65 (resume): no protocol file changed since 7b31b6fe that this stage uses; Check-Status 0 error."
  - "2026-11-20 protocols read to 7b31b6fe: AUDIT 9.f now needs Virginie's explicit oui on the whole gallery in chat before mountPreview, then gallery_validated_sha (scripts/Get-GalleryHash.ps1) in STATUS.md; GALLERY-PROPS credit: ATTRIBUTION.md 'Gallery set' always, checked at the stage passage. Both apply at shootGallery end, not now."
@@ -66,7 +66,7 @@ remaining:
   - "2026-11-06: unverified: lip colours (implemented, 3.a closed), approach in Docs/DESIGN-LIP-COLOURS.md (recolour installed VTE lip textures in memory on demand, Harmony postfix on Facial Animation's MouthControllerComp.LoadTextures, nothing shipped). Virginie: any colour per pawn (example forest green #226E42 to match Miel's underwear, test copy NsbMouthLipsBigForest in NsbFaceFit), ideally per outfit or occasion. Caramel, Rose, Berry are presets only. Virginie 2026-11-06 (final): the lip colour follows the lipstick worn: lipstick = colourable apparel with no worn graphic on its own layer; outfits and occasions go through the apparel policy, matching an outfit is a dye. One lipstick def per shade family (Virginie 2026-11-06), so each occasion's apparel policy picks the shade; first shades Caramel, Rose, Berry, Forest #226E42, list to settle. Open: dye needs Ideology, mouth body part group, recipe and cost."
   - "2026-11-06: 1.a done: duplicate search (Search-Workshop.sh, pattern lipstick or makeup, run makeup-dup): no mod recolours Facial Animation lips. Makeup Mod (BigOlBullseye.MakeupMod, 3810397741) is a craftable beauty item with no visual; Roo's Tattoos and Roo's Birthmarks and Blemishes are skin marks, not lips."
 updated: 2026-11-20
-protocols_read_sha: 2c213d6584685c343fae82534949d1545ca7c60d
+protocols_read_sha: 9f4de5ad0d7160029a489141367e2c925b344cb7
 ---
 
 # Vanity Case: status
