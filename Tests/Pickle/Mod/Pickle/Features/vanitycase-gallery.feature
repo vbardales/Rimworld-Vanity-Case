@@ -4,6 +4,7 @@
 @requires:nelim.pickletools.colonistrace
 @requires:nelim.pickletools.stagedecor
 @requires:nelim.pickletools.inspecttabs
+@requires:nelim.pickletools.clickdiagnostics
 @timeout:3000
 # Staged photographs, not assertions (GALLERY.md): a person opens each image. Pass: wsl-deps.gallery.map (NSB base map wsl-deps.sanctuary-nelim.map plus the lipstick map).
 # SHOTLIST of 2026-11-17 (write-shotlist, first pass). Opus director pass kept: tighter zoom, tube counter 4-3-2-1, no mirror, Berry on Nelim, no red-on-red, hut at 18h and 19h, no walking pose. Not kept: Rose on Miel (Caramel is her validated lipstick), Gear-tab window (no step; the item card of 02-french already exists).

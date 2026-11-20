@@ -4,6 +4,7 @@
 @requires:nelim.pickletools.colonistrace
 @requires:nelim.pickletools.stagedecor
 @requires:nelim.pickletools.inspecttabs
+@requires:nelim.pickletools.clickdiagnostics
 @timeout:1500
 # Calibration, not a gallery set: four shots of the same pawn (Nelim, Berry lipstick) with the mouth step lowered by 0.05, 0.12, 0.2 and 0.3 cell, root size 0.5. A person opens the four images and reads which drop centres the lips; the value goes into scenes 2, 3 and 5 of vanitycase-gallery.feature (PiT, 2026-11-18: 0.12 is a guess).
 Feature: Vanity Case mouth calibration
