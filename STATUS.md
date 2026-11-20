@@ -22,6 +22,7 @@ ecosystem_line: "1.0"         # 2026-11-19: PiI search done 2026-11-17 (AUDIT 2.
 tested_1_7: no
 code_review_sha: 6e27ca89118781c8168d9923f64c58d4e98d0b6b
 remaining:
+ - "2026-11-20 protocols read to 7b31b6fe: AUDIT 9.f now needs Virginie's explicit oui on the whole gallery in chat before mountPreview, then gallery_validated_sha (scripts/Get-GalleryHash.ps1) in STATUS.md; GALLERY-PROPS credit: ATTRIBUTION.md 'Gallery set' always, checked at the stage passage. Both apply at shootGallery end, not now."
  - "2026-11-20 8.f GREEN: ticket 94df recipe patches 2/2 (recipe-apothecary-tallow: each lipstick holds (1x AYTallow) in costList; recipe-em-pigments: Orange, Red, Purple, Green pigments), staged tree 5c89623 plus the step wording fix, Player.log: no patch error from Vanity Case. Proves both PatchOperationFindMod names match in game and the costList item text '(1x Def)'. Evidence Tests/Pickle/Evidence/recipe-patches (summary.json, junit.xml). Waiting on 820e (recipe base) for the same text on RawBerries."
 - "2026-11-20 0b7d RED (Undefined step: my line lacked the word the; PiT: step is in the DLL, wording is 'the def X of type T has Y in the list L', item text is the ToString of ThingDefCountClass, expected '(1x RawBerries)' NOT verified: a failure prints 'it holds: ...' with the exact texts). Fixed on fce69e1, refiled 820e (recipe base, evidence Inbox/recipe-base2); 94df (recipe patches) still pending, stages the fixed tree. Waiting on the TM."
 - "2026-11-20 7.f offline rerun at c9daeb7: Run-UnitTests OK 7 checks, Check-OptionalCompat OK (2 patched, 2 declared), Check-Translations PASS 10 keys, Check-Status 0 errors; DLL last changed in 41c9a46 (scratch build byte-identical on 2026-11-20). In-game suites at this revision: see tickets 0b7d and 94df, lipstick suites 8.a, 8.c, 8.g to be refiled after them."
@@ -62,7 +63,7 @@ remaining:
   - "2026-11-06: unverified: lip colours (implemented, 3.a closed), approach in Docs/DESIGN-LIP-COLOURS.md (recolour installed VTE lip textures in memory on demand, Harmony postfix on Facial Animation's MouthControllerComp.LoadTextures, nothing shipped). Virginie: any colour per pawn (example forest green #226E42 to match Miel's underwear, test copy NsbMouthLipsBigForest in NsbFaceFit), ideally per outfit or occasion. Caramel, Rose, Berry are presets only. Virginie 2026-11-06 (final): the lip colour follows the lipstick worn: lipstick = colourable apparel with no worn graphic on its own layer; outfits and occasions go through the apparel policy, matching an outfit is a dye. One lipstick def per shade family (Virginie 2026-11-06), so each occasion's apparel policy picks the shade; first shades Caramel, Rose, Berry, Forest #226E42, list to settle. Open: dye needs Ideology, mouth body part group, recipe and cost."
   - "2026-11-06: 1.a done: duplicate search (Search-Workshop.sh, pattern lipstick or makeup, run makeup-dup): no mod recolours Facial Animation lips. Makeup Mod (BigOlBullseye.MakeupMod, 3810397741) is a craftable beauty item with no visual; Roo's Tattoos and Roo's Birthmarks and Blemishes are skin marks, not lips."
 updated: 2026-11-20
-protocols_read_sha: f970908e7a364ca2da288b622f3fd828d2e28e45
+protocols_read_sha: 7b31b6fec2d4612e82291cb99ed961cf71eae88e
 ---
 
 # Vanity Case: status
